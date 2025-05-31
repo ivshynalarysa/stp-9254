@@ -12,6 +12,9 @@
     font-family: "Baloo 2", sans-serif;
     font-weight: 500;
     line-height: 1.5;
+    display: inline-flex;
+    align-items: center;
+    
   
   
 }
