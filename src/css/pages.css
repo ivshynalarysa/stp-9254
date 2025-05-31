@@ -1,4 +1,4 @@
-.cookies {
+.pages {
   font-family: "Fredoka", sans-serif;
   font-weight: 300;
   font-size: 14px;
@@ -18,7 +18,7 @@
   
   
 }
-.cookies-title  {
+.pages-title  {
     font-family: "Baloo 2", sans-serif;
     font-weight: 700;
     font-size: 36px;
@@ -35,53 +35,48 @@
   display: block;
   margin-left: 110px;
 }
-.cookies-title .space:nth-child(2){
+.pages-title .space:nth-child(2){
   transform: rotate(-5deg); margin-top: 10px;
 }
 
 
-.cookies-link-to-policy {
+.pages-link {
   text-decoration: underline;
   color: #0b6bfc;
 }
-.cookies-list {
+.pages-list {
   margin-top: 10px;
   display: flex;
   flex-direction: column;
   gap: 10px;
  
 }
-.cookies-item-title {
+.pages-item-title {
    font-weight: 600;
 }
 
-.cookies-list-2 {
+.pages-list-2 {
   list-style-type: disc;
   list-style-position: inside;
 }
 
-.cookies-list-3 {
+.pages-list-3 {
   display: flex;
   flex-direction: column;
   gap: 10px;
 
 }
 
-.cookies-list-manage {
+.pages-list-manage {
   text-decoration: underline;
   color: #0b6bfc;
   
 }
 
-.cookies-link-manage {
-}
-.cookies-link-email {
-  text-decoration: underline;
-  color: #0b6bfc;
-}
+
 
 @media only screen and (min-width: 1200px) {
- .cookies {
+ .pages {
   font-family: "Fredoka", sans-serif;
 
   font-size: 16px;
@@ -102,11 +97,11 @@
   margin-left: 200px;
 }
 
-.cookies-container{
+.pages-container{
   
   padding: 0 86px;
 }
-.cookies-title  {
+.pages-title  {
  
 font-size: 64px;
 line-height: 1.1;
@@ -116,7 +111,7 @@ margin-top: 0;
 
 
 }
-.cookies-list {
+.pages-list {
   margin-top: 16px;
  
 }

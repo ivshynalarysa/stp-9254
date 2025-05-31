@@ -11,7 +11,7 @@
   line-height: 2.3;
 }
 
-.footer-list {
+.footer-nav {
   display: flex;
  flex-direction: column;
  font-size: 32px;
@@ -31,19 +31,19 @@
   line-height: 1.2;
 }
 
-  .footer-list {
+  .footer-nav {
     display: flex;
  flex-direction: row;
  justify-content: center;
  gap: 36px;
   font-size: 48px;
   margin-bottom: 100px;
-  }
- .footer-item {
+ }
+ .footer-link {
   
   position: relative;
 }
-.footer-item:not(:last-child)::after {
+.footer-link:not(:last-child)::after {
   content: "|";
   margin-left: 16px;
   color: #fff;
