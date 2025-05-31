@@ -28,12 +28,19 @@
     transform: rotate(-5deg);
     display: block;
 }
+
 .space1{
   display: block;
 }
 .space2{
   display: block;
   margin-left: 110px;
+}
+
+.space2-terms{
+  display: block;
+  margin-left: 36px;
+
 }
 .pages-title .space:nth-child(2){
   transform: rotate(-5deg); margin-top: 10px;
@@ -97,6 +104,9 @@
   margin-left: 200px;
 }
 
+.space2-terms {
+  margin-left: 150px;
+} 
 .pages-container{
   
   padding: 0 86px;
