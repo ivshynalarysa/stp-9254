@@ -1,0 +1,128 @@
+.pages {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #000;
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+}
+.link-go-back {
+    font-family: "Baloo 2", sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    display: inline-flex;
+    align-items: center;
+    
+  
+  
+}
+.pages-title  {
+    font-family: "Baloo 2", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.3;
+    margin-bottom: 42px;
+    margin-top: 34px;
+    transform: rotate(-5deg);
+    display: block;
+}
+
+.space1{
+  display: block;
+}
+.space2{
+  display: block;
+  margin-left: 110px;
+}
+
+.space2-terms{
+  display: block;
+  margin-left: 36px;
+
+}
+.pages-title .space:nth-child(2){
+  transform: rotate(-5deg); margin-top: 10px;
+}
+
+
+.pages-link {
+  text-decoration: underline;
+  color: #0b6bfc;
+}
+.pages-list {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+ 
+}
+.pages-item-title {
+   font-weight: 600;
+}
+
+.pages-list-2 {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.pages-list-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+.pages-list-manage {
+  text-decoration: underline;
+  color: #0b6bfc;
+  
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+ .pages {
+  font-family: "Fredoka", sans-serif;
+
+  font-size: 16px;
+  line-height: 1.6;
+
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+}
+.link-go-back {
+ 
+    line-height: 1;
+ 
+}
+
+.space2{
+
+  margin-left: 200px;
+}
+
+.space2-terms {
+  margin-left: 150px;
+} 
+.pages-container{
+  
+  padding: 0 86px;
+}
+.pages-title  {
+ 
+font-size: 64px;
+line-height: 1.1;
+
+margin-bottom: 60px;
+margin-top: 0;
+
+
+}
+.pages-list {
+  margin-top: 16px;
+ 
+}
+  }
