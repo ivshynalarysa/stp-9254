@@ -1,4 +1,25 @@
+.header {
+  position: relative;
+  z-index: 0;
+}
 
+
+.header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: image-set(
+    url('../img/hero+header/bg_hero_mob_1x.jpg') 1x,
+    url('../img/hero+header/bg_hero_mob_2x.jpg') 2x);
+  background-size: cover;
+  background-position: center;
+  width: 320px;
+  height: 568px;
+  
+  opacity: 0.15;
+ 
+}
 .navigation {
   display: none;
 }
@@ -6,6 +27,13 @@
 
 
 @media only screen and (min-width: 1200px) {
+  .header::before {
+    background-image: image-set(
+      url('../img/hero+header/bg_hero_mob_1x.jpg') 1x,
+      url('../img/hero+header/bg_hero_mob_2x.jpg') 2x);
+    width: 1200px;
+    height: 970px;
+}
   .header {
   padding-bottom: 10px;
 }
