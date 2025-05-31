@@ -1,0 +1,120 @@
+.cookies {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #000;
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+}
+.link-go-back {
+    font-family: "Baloo 2", sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+  
+  
+}
+.cookies-title  {
+    font-family: "Baloo 2", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.3;
+    margin-bottom: 42px;
+    margin-top: 34px;
+    transform: rotate(-5deg);
+    display: block;
+}
+.space1{
+  display: block;
+}
+.space2{
+  display: block;
+  margin-left: 110px;
+}
+.cookies-title .space:nth-child(2){
+  transform: rotate(-5deg); margin-top: 10px;
+}
+
+
+.cookies-link-to-policy {
+  text-decoration: underline;
+  color: #0b6bfc;
+}
+.cookies-list {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+ 
+}
+.cookies-item-title {
+   font-weight: 600;
+}
+
+.cookies-list-2 {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.cookies-list-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+.cookies-list-manage {
+  text-decoration: underline;
+  color: #0b6bfc;
+  
+}
+
+.cookies-link-manage {
+}
+.cookies-link-email {
+  text-decoration: underline;
+  color: #0b6bfc;
+}
+
+@media only screen and (min-width: 1200px) {
+ .cookies {
+  font-family: "Fredoka", sans-serif;
+
+  font-size: 16px;
+  line-height: 1.6;
+
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+}
+.link-go-back {
+ 
+    line-height: 1;
+ 
+}
+
+.space2{
+
+  margin-left: 200px;
+}
+
+.cookies-container{
+  
+  padding: 0 86px;
+}
+.cookies-title  {
+ 
+font-size: 64px;
+line-height: 1.1;
+
+margin-bottom: 60px;
+margin-top: 0;
+
+
+}
+.cookies-list {
+  margin-top: 16px;
+ 
+}
+  }
