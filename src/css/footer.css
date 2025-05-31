@@ -32,13 +32,15 @@
 }
 
   .footer-list {
+    display: flex;
  flex-direction: row;
+ justify-content: center;
  gap: 36px;
   font-size: 48px;
   margin-bottom: 100px;
   }
  .footer-item {
-  text-align: center;
+  
   position: relative;
 }
 .footer-item:not(:last-child)::after {
