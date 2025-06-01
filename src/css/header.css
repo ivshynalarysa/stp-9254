@@ -1,3 +1,195 @@
+header {
+position: fixed;
+z-index: 500;
+background-color: rgba(255, 255, 255, 0.9);
+backdrop-filter: blur(10px);
+top: 0;
+left: 0;
+width: 100%;
+}
+
+.background-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image: url('../img/hero+header/bg_hero_mob_1x.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.15;
+}
+
+.container.header-container {
+  position: relative;
+  z-index: 1;
+  padding: 10px 16px;
+  width: 100%;
+  min-height: 60px;
+  background-color: transparent;
+}
+
+.logo-header {
+  display: block;
+  width: 94px;
+  height:44px;
+  fill: #a041ff;
+}
+
+
+.burger-btn {
+  position: absolute;
+  background: none;
+  border: none;
+  stroke: black;
+  cursor: pointer;
+  z-index: 5;
+  top: 12px;
+  right: 16px;
+}
+
+.navigation {
+  display: none;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FFD700;
+  backdrop-filter: blur(4px);
+  display: none;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.backdrop[data-visible="true"] {
+  display: flex;
+}
+
+.modal-menu {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 100px;
+  min-width: 210px;
+  max-width: 320px;
+}
+
+.modal-nav {
+  overflow-y: auto;
+  height: 100%;
+  padding-right: 16px;
+  list-style: none;
+  margin: 0;
+}
+
+.backdrop.open {
+  display: flex;
+}
+
+.modal-menu.open {
+  transform: translateX(0);
+}
+
+.close-btn {
+  margin-top: 60px;
+  padding: 0;
+  margin-bottom: 12px;
+  background: none;
+  border:none;
+  stroke: black;
+  top: 60px;
+  left: 100px;
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  cursor: pointer;
+  z-index: 9001;
+}
+
+.modal-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.modal-nav .nav-item {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #000;
+}
+
+@media only screen and (min-width: 1200px) {
+  .background-layer {
+    background-image: image-set(url('../img/hero+header/bg_hero_desk_1x.jpg') 1x,
+        url('../img/hero+header/bg_hero_desk_2x.jpg') 2x);
+  }
+
+  .container.header-container {
+    padding: 10px 86px;
+    min-height: 180px;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+  }
+
+.logo-header {
+    height: 70px;
+    width: 80px;
+    z-index: 2;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+
+.burger-btn {
+  display: none;
+  
+}
+
+.navigation {
+  display: flex;
+}
+
+.nav-list-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 20px;
+  column-gap: 24px;
+  list-style: none;
+}
+  .nav-item-head {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+  color: #5c2d91;
+}
+
+.modal-menu {
+  display: none;
+}
+
+.backdrop {
+  display: none;
+}
+}
+
+
+
+
+
+
+
+
 
 
 

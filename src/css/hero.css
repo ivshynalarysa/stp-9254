@@ -1,0 +1,111 @@
+.match-title{
+    font-family: "Fredoka", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+    padding-top: 70px;
+} 
+
+.outlined-text {
+    position: relative;
+    color: #ffffff;    
+    font-size: 32px;
+    display: inline-block;
+}
+
+.outlined-text::before {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    color: #5C2D91;
+    text-shadow:
+            -2px -2px 1px #5C2D91,
+            2px -2px 1px #5C2D91,
+            -2px 2px 1px #5C2D91,
+            2px 2px 1px #5C2D91,
+            -2px 0px 1px #5C2D91,
+            2px 0px 1px #5C2D91,
+            0px -2px 1px #5C2D91,
+            0px 2px 1px #5C2D91;
+}
+
+.hero-title {
+    font-family: "Baloo 2", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1;
+    color: #ff4eb8;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    display: block;
+    transform: rotate(-5deg);
+    text-align: start;
+    margin: 0 auto;
+}
+    .princess-hero {
+    margin-top: 10px;
+    width: 80px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+.hero-descr {
+    display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .hero {
+        position: relative;
+    }
+
+    .match-title {
+        font-size: 64px;
+        line-height: 1.13;
+        padding-top: 212px;
+        
+    } 
+    .princess-hero {
+        position: absolute;
+        top: 0;
+        right: 10.15px;
+        border: 1px solid #ffd700;
+        border-radius: 20px;
+        width: 90px;
+        height: 140px;
+        box-shadow: 0 4px 4px #ffd700;
+        transform: rotate(6deg);
+        pointer-events: none;
+        z-index: 2;    
+    }
+
+    .hero-title {
+        font-size: 96px;
+        line-height: 1.04;
+        padding-top: 10px;
+        min-width: fit-content;
+    }
+
+    .hero-descr-wrapper {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .hero-descr {
+        display: inline-block;
+        font-family: "Fredoka", sans-serif;
+        max-width: 590px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.33;
+        text-align: left;
+        color: #5c2d91;
+        padding-top: 30px;
+        margin-bottom: 38px;
+    }
+}
