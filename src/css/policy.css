@@ -1,0 +1,113 @@
+.policy {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #000;
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+}
+.link-go-back {
+    font-family: "Baloo 2", sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    display: inline-flex;
+    align-items: center;
+    
+  
+  
+}
+.policy-title  {
+    font-family: "Baloo 2", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.3;
+    margin-bottom: 42px;
+    margin-top: 34px;
+    transform: rotate(-5deg);
+    display: block;
+}
+.space1{
+  display: block;
+}
+.space2{
+  display: block;
+  margin-left: 110px;
+}
+
+
+
+
+.policy-list {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+ 
+}
+.policy-item-title {
+   font-weight: 600;
+}
+
+
+
+.policy-list-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+.policy-list-services {
+  text-decoration: underline;
+  color: #0b6bfc;
+  
+}
+
+.policy-link-email {
+  text-decoration: underline;
+  color: #0b6bfc;
+}
+
+@media only screen and (min-width: 1200px) {
+ .policy {
+  font-family: "Fredoka", sans-serif;
+
+  font-size: 16px;
+  line-height: 1.6;
+
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+}
+.link-go-back {
+ 
+    line-height: 1;
+ 
+}
+
+.space2{
+
+  margin-left: 200px;
+}
+
+.policy-container{
+  
+  padding: 0 86px;
+}
+.policy-title  {
+ 
+font-size: 64px;
+line-height: 1.1;
+
+margin-bottom: 60px;
+margin-top: 0;
+
+
+}
+.policy-list {
+  margin-top: 16px;
+ 
+}
+  }
