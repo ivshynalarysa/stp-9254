@@ -1,0 +1,159 @@
+.game-mechanics {
+    padding-left:16px;
+    padding-right: 16px;
+    background-image: url('../img/game_mechanics/bg_stars_mob.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.game-mechanics-container {
+    min-width: 320px;
+}
+
+.mechanics-header {
+    font-family: "Baloo 2", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.33333;
+    color: #ff4eb8;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    transform: rotate(-5deg);
+    text-align: start;
+    margin: 0 auto;
+    margin-bottom: 34px;
+    padding-right: 45px;
+    padding-left: 16px;
+}
+
+.mechanics-descr {
+    font-family: "Fredoka", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.16667;
+    color: #5c2d91;
+    margin-bottom: 40px;
+    padding-left: 16px;
+    padding-right: 31px;
+}
+
+
+.mechanics-list {
+    margin-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mechanics-list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+}
+
+.mechanics-icon {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+}
+
+.mechanics-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.mechanics-list-descr {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: #5c2d91;
+    line-height: 1.5;
+}
+
+.mechanics-list-descr {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.57143;
+    color: #5c2d91;
+}
+
+.mechanics-afterlist {
+    font-family: "Fredoka", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28571;
+    background: linear-gradient(90deg, #5c2d91 0%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.gradient-line {
+    display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .game-mechanics {
+        background-image: url('../img/game_mechanics/bg_stars_desk.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; 
+    }
+    
+    .game-mechanics-container {
+        padding-left: 86px;
+        padding-right: 86px;
+        margin: 0 auto;
+    }
+    
+    .mechanics-header {
+        font-size: 64px;
+        margin-top: 22px;
+        margin-bottom: 44px;
+    }
+    
+    .mechanics-descr {
+        font-size: 48px;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+        padding-bottom: 40px;
+        
+    }
+    
+    .mechanics-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        margin: 0 auto 32px auto;
+        max-width: 780px;
+    }
+    
+    .mechanics-list-item {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 26px;
+       
+    }
+    
+    .mechanics-list-descr {
+        font-size: 24px;
+    }
+    
+    .mechanics-afterlist {
+        font-size: 24px;
+
+    }
+    .mechanics-icon {
+        flex-shrink: 0;
+        width: 50px;
+        height: 50px;   
+    }
+        .gradient-line {
+            display: block;
+    }
+}
