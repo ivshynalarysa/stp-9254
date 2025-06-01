@@ -4,6 +4,7 @@ const buttons = document.querySelectorAll('[data-cookie-action]');
 if (!localStorage.getItem('cookiesConsent')) {
   banner.setAttribute('data-visible', 'true');
   banner.style.display = 'block';
+ 
 }
 
 buttons.forEach(button => {
@@ -17,6 +18,7 @@ buttons.forEach(button => {
     }
 
     banner.style.display = 'none';
+   document.body.style.overflow = 'none'; 
   });
 });
 
