@@ -6,6 +6,7 @@
     text-align: center;
     color: #fff;
     margin: 0 auto;
+    padding-top: 70px;
 } 
 
 .outlined-text {
@@ -66,22 +67,22 @@
     .match-title {
         font-size: 64px;
         line-height: 1.13;
-        padding-top: 32px;
+        padding-top: 212px;
         
     } 
-        .princess-hero {
-            position: absolute;
-            top: 0;
-            right: 10.15px;
-            border: 1px solid #ffd700;
-            border-radius: 20px;
-            width: 90px;
-            height: 140px;
-            box-shadow: 0 4px 4px #ffd700;
-            transform: rotate(6deg);
-            pointer-events: none;
-            z-index: 2;    
-         }
+    .princess-hero {
+        position: absolute;
+        top: 0;
+        right: 10.15px;
+        border: 1px solid #ffd700;
+        border-radius: 20px;
+        width: 90px;
+        height: 140px;
+        box-shadow: 0 4px 4px #ffd700;
+        transform: rotate(6deg);
+        pointer-events: none;
+        z-index: 2;    
+    }
 
     .hero-title {
         font-size: 96px;
