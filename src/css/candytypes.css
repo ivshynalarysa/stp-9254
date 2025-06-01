@@ -1,0 +1,194 @@
+.candy-types {
+    padding-left: 16px;
+    padding-right: 16px;
+    background-image: url('../img/candy_types/bgmob.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+}
+
+
+.candy-types-container {
+    min-width: 320px;
+    padding-top: 15px;
+    padding-bottom: 40px;
+}
+
+.candy-types-header {
+    font-family: "Baloo 2", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.33;
+    color: #ff4eb8;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    transform: rotate(-5deg);
+    text-align: start;
+    margin: 0 auto;
+    margin-bottom: 34px;
+    padding-right: 45px;
+    padding-left: 16px;
+}
+
+.candy-types-descr {
+    font-family: "Fredoka", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.16;
+    color: #5c2d91;
+    margin-bottom: 40px;
+    padding-left: 16px;
+    padding-right: 31px;
+}
+
+.candy-types-list {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+.candy-types-list-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.candy-types-icon {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+}
+.candy-text-wrapper {
+    min-width: 232px;
+    height: 50px;
+    border: 1px solid #ffd700;
+    box-shadow: 0 4px 10px 0px rgba(255, 215, 0, 0.25);
+    background: #f8f0ff;
+}
+.candy-name {
+    font-family: "Fredoka", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.26;
+    letter-spacing: 0.06em;
+    color: #ff4eb8;
+    margin-top: 4px;
+    margin-left: 6px;
+    margin-right: 10px;
+}
+
+.candy-descr {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: #666;
+    padding-left: 10px;
+    margin-bottom: 4px;
+    padding-right: 2px;
+}
+
+.candy-types-afterlist {
+    font-family: "Fredoka", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28;
+    background: linear-gradient(106deg, #5c2d91 0%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient-line-candy-types {
+    display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .game-mechanics {
+        background-image: url('../img/candy_types/bgdesk.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 40px;
+    }
+
+    .candy-types-container {
+        padding-left: 86px;
+        padding-right: 86px;
+        margin: 0 auto;
+        padding-top: 28px;
+        padding-bottom: 35px;
+    }
+
+    .candy-types-header {
+        font-size: 64px;
+        margin-top: 22px;
+        margin-bottom: 44px;
+    }
+
+    .candy-types-descr {
+        font-size: 48px;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+        padding-bottom: 60px;
+    }
+    .candy-types-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+        margin: 0 auto;
+        padding-bottom: 60px;
+    }
+    
+
+    .candy-types-list-item {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        max-width: 600px;
+        width: 100%;
+    }
+     .candy-types-icon {
+        flex-shrink: 0;
+        width: 100px;
+        height: 100px;
+    }
+
+    .candy-text-wrapper{
+        min-width: 450px;
+        height: 100px;
+    }
+
+    .candy-name {
+        font-size: 24px;
+        line-height: 1.33;
+        padding-left: 46px;
+        margin-bottom: 20px;
+        padding-top: 12px;
+    }
+
+    .candy-descr{
+        font-size: 16px;
+        line-height: 1.5;
+        padding-left: 162px;
+        padding-bottom: 12px;
+    }
+   
+    .candy-types-afterlist {
+        font-size: 24px;
+        line-height: 1.33333;
+        margin-bottom: 0;
+    }
+
+    .gradient-line-candy-types {
+        display: block;
+    }
+}
