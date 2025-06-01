@@ -1,36 +1,44 @@
-.header {
- 
-}
-
-
-.header::before {
-  content: '';
+.background-layer {
   position: absolute;
   inset: 0;
-  z-index: -1;
-  background-image: image-set(
-    url('../img/hero+header/bg_hero_mob_1x.jpg') 1x,
-    url('../img/hero+header/bg_hero_mob_2x.jpg') 2x);
-  background-size: cover;
+  z-index: 0;
+  background-image: url('../img/hero+header/bg_hero_mob_1x.jpg');
+  background-repeat: no-repeat;
   background-position: center;
-  width: 320px;
-  height: 568px;
+  background-size: cover;
   opacity: 0.15;
- 
-}
-.navigation {
-  display: none;
 }
 
+.container.header-container {
+  position: relative;
+  z-index: 1;
+  padding: 10px 16px;
+  width: 100%;
+  min-height: 60px;
+  background-color: transparent;
+}
+
+.logo-header {
+  display: block;
+  width: 94px;
+  height:44px;
+  fill: #a041ff;
+}
+
+
 .burger-btn {
+  position: absolute;
   background: none;
   border: none;
   stroke: black;
   cursor: pointer;
   z-index: 5;
-  position: fixed;
   top: 12px;
   right: 16px;
+}
+
+.navigation {
+  display: none;
 }
 
 .backdrop {
@@ -51,14 +59,13 @@
 }
 
 .modal-menu {
-position: relative;
   margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-left: 100px;
-    min-width: 210px;
-    max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 100px;
+  min-width: 210px;
+  max-width: 320px;
 }
 
 .modal-nav {
@@ -98,7 +105,6 @@ position: relative;
   display: flex;
   flex-direction: column;
   row-gap: 10px;
- 
 }
 
 .modal-nav .nav-item {
@@ -109,28 +115,35 @@ position: relative;
   color: #000;
 }
 
-
 @media only screen and (min-width: 1200px) {
-  .header::before {
-    background-image: image-set(
-      url('../img/hero+header/bg_hero_mob_1x.jpg') 1x,
-      url('../img/hero+header/bg_hero_mob_2x.jpg') 2x);
-    width: 1200px;
-    height: 970px;
-}
-  .header {
-    position: fixed;
-    padding-top: 110px;
-    padding-bottom: 10px;
-    background-color: #fff;
-    z-index: 9; 
+  .background-layer {
+    background-image: image-set(url('../img/hero+header/bg_hero_desk_1x.jpg') 1x,
+        url('../img/hero+header/bg_hero_desk_2x.jpg') 2x);
+  }
+
+  .container.header-container {
+    padding: 10px 86px;
+    min-height: 180px;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+  }
+
+.logo-header {
+    height: 70px;
+    width: 80px;
+    z-index: 2;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+
+.burger-btn {
+  display: none;
   
 }
 
-.container header-container {
-  min-width: 1220px;
-}
-  .navigation {
+.navigation {
   display: flex;
 }
 
@@ -151,13 +164,12 @@ position: relative;
   color: #5c2d91;
 }
 
-.burger-btn,
+.modal-menu {
+  display: none;
+}
+
 .backdrop {
   display: none;
-  
-}
-.navigation {
-  display: block;
 }
 }
 
