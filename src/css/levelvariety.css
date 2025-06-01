@@ -1,0 +1,176 @@
+.level-variety {
+    padding-left: 16px;
+        padding-right: 16px;
+        background-image: url('/img/game_mechanics/bg_stars_mob.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: repeat;
+
+}
+
+.level-variety-container {
+    min-width: 320px;
+    padding-top: 15px;
+    padding-bottom: 40px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.level-variety-header {
+    font-family: "Baloo 2", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.33;
+    color: #ff4eb8;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    transform: rotate(-5deg);
+    text-align: start;
+    margin: 0 auto;
+    margin-bottom: 34px;
+    padding-right: 45px;
+    padding-left: 16px;
+
+}
+
+.level-variety-descr {
+    font-family: "Fredoka", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.16;
+    color: #5c2d91;
+    margin-bottom: 40px;
+    padding-left: 16px;
+    padding-right: 31px;
+}
+
+.level-variety-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 41px;
+}
+
+.level-variety-wrapper {
+    box-shadow: inset 0 0 100px 0 #ffd700;
+    background: #fff8dc;
+    padding-top: 37px;
+    padding-left: 42px;
+    padding-right: 42px;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 242px;
+    min-width: 237px;
+    
+}
+
+.level-text-cont {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.level-name {
+    font-family: "Fredoka", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.33;
+    text-align: center;
+    color: #000;
+}
+
+.level-descr {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #000;
+}
+
+.level-variety-icon {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.level-variety-afterlist {
+    font-family: "Fredoka", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.33333;
+    color: #5c2d91;
+}
+
+.gradient-line-level-variety {
+    display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+    .level-variety {
+        background-image:
+         
+        linear-gradient(to top, rgba(255, 255, 255, 0) 85%, #ffffff 95%),
+        url('/img/game_mechanics/bg_stars_desk.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat:no-repeat;
+    }
+
+    .level-variety-container {
+        padding-left: 86px;
+        padding-right: 86px;
+        margin: 0 auto;
+        padding-top: 28px;
+        padding-bottom: 35px;
+    }
+
+    .level-variety-header {
+        font-size: 64px;
+        margin-top: 22px;
+        margin-bottom: 44px;
+    }
+
+    .level-variety-descr {
+        font-size: 48px;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 60px;
+    }
+
+    .level-variety-list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 50px;
+        row-gap: 48px;
+        margin: 0 auto;
+        margin-bottom: 66px;
+        max-width: 828px;
+    }
+    
+    .level-variety-list-item {
+        flex: 1 0 calc(33.333% - 50px);
+        max-width: calc(33.333% - 50px);
+    }
+
+    .level-variety-list-item:nth-child(4),
+    .level-variety-list-item:nth-child(5) {
+        grid-column: span 1;
+        justify-self: center;     
+    }
+
+    .level-variety-afterlist {
+        font-size: 24px;
+        line-height: 1.33;
+    }
+
+    .gradient-line-level-variety {
+        display: block;
+    }
+
+}

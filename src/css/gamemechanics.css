@@ -1,7 +1,7 @@
 .game-mechanics {
     padding-left:16px;
     padding-right: 16px;
-    background-image: url('../img/game_mechanics/bg_stars_mob.png');
+    background-image: url('/img/game_mechanics/bg_stars_mob.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -96,7 +96,9 @@
 @media only screen and (min-width: 1200px) {
 
     .game-mechanics {
-        background-image: url('../img/game_mechanics/bg_stars_desk.png');
+        background-image: 
+        linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, #ffffff 90%),
+            url('/img/game_mechanics/bg_stars_desk.png');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat; 
