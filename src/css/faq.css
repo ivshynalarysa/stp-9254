@@ -1,0 +1,27 @@
+.faq {
+   font-family: "Baloo 2", sans-serif; 
+   padding-top: 10px;
+   padding-bottom: 40px;
+}
+.faq-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.3;
+    text-shadow: 0 4px 4px  rgba(0, 0, 0, 0.25);
+    transform: rotate(-5deg);
+    margin-bottom: 28px;
+    
+}
+.space1-faq{
+  color: #5c2d91;
+}
+.space2-faq{
+  display: block;
+  color: #ff4eb8;
+}
+
+.space3-faq{
+  display: block;
+  color: #ff4eb8;
+  margin-left: 120px;
+}
