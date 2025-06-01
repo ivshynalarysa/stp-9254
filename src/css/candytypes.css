@@ -1,18 +1,18 @@
 .candy-types {
-    padding-left: 16px;
-    padding-right: 16px;
     background-image: url('../img/candy_types/bgmob.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 40px;
+    min-width: 320px;
 }
-
 
 .candy-types-container {
     min-width: 320px;
     padding-top: 15px;
     padding-bottom: 40px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .candy-types-header {
@@ -42,15 +42,13 @@
 }
 
 .candy-types-list {
-    margin-bottom: 40px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding-left: 10px;
     padding-right: 10px;
+    margin: 0 auto 40px auto;
+    max-width: 288px;
 }
-
-
 
 .candy-types-list-item {
     display: flex;
@@ -109,7 +107,6 @@
 }
 
 @media only screen and (min-width: 1200px) {
-
     .game-mechanics {
         background-image: url('../img/candy_types/bgdesk.png');
         background-size: cover;
@@ -146,14 +143,14 @@
         gap: 60px;
         margin: 0 auto;
         padding-bottom: 60px;
+        max-width: 600px;
     }
     
-
     .candy-types-list-item {
         display: flex;
         align-items: center;
         gap: 50px;
-        max-width: 600px;
+        
         width: 100%;
     }
      .candy-types-icon {
