@@ -2,44 +2,125 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Royal Candy Mania – Match, crush, and explore the sweetest puzzle world! A majestic match-3 adventure filled with candies, cookies, and lollipops.">
-    <meta name="keywords" content="match 3 puzzle, candy game, free puzzle game, cookie crush, lollipop match, offline games, candy blast">
-    <meta name="author" content="SweetEmpire Interactive">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://candyroyalemania.com">
-    
-    <link rel="icon" type="image/svg+xml"  href="/stp-9254/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Royal Candy Mania – Match, crush, and explore the sweetest puzzle world! A majestic match-3 adventure filled with candies, cookies, and lollipops."
+    />
+    <meta
+      name="keywords"
+      content="match 3 puzzle, candy game, free puzzle game, cookie crush, lollipop match, offline games, candy blast"
+    />
+    <meta name="author" content="SweetEmpire Interactive" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://candyroyalemania.com" />
+
+    <link rel="icon" type="image/svg+xml" href="/stp-9254/favicon.svg" />
 
     <title>Royal Candy Mania</title>
-     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-    integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&display=swap" 
-    rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
     <script type="module" crossorigin src="/stp-9254/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/stp-9254/assets/styles-CWGt-Y1W.css">
+    <link rel="stylesheet" crossorigin href="/stp-9254/assets/styles-YpkxdguN.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    
+  <div class="container header-container">
+    <div class="background-layer"></div>
+
+    <svg class="logo-header">
+      <use href="../img/sprite.svg#icon-logo"></use>
+    </svg>
+
+    <button class="burger-btn" data-action="open" aria-label="Open menu">
+      <svg class="icon-burger" width="32" height="32">
+        <use href="../img/sprite.svg#icon-burger"></use>
+      </svg>
+    </button>
+
+    <nav class="navigation">
+      <ul class="nav-list-head">
+        <li class="nav-item-head"><a href="#home">Home</a></li>
+        <li class="nav-item-head">
+          <a href="#candytipes">Candy Types & Boosters</a>
+        </li>
+        <li class="nav-item-head">
+          <a href="#gamemechanics">Game Mechanics</a>
+        </li>
+        <li class="nav-item-head"><a href="#levelvariety">Level Variety</a></li>
+        <li class="nav-item-head">
+          <a href="#candykingdom">Candy Kingdom Map</a>
+        </li>
+        <li class="nav-item-head"><a href="#strategytips">Strategy Tips</a></li>
+        <li class="nav-item-head"><a href="#events">Events & Bonuses</a></li>
+        <li class="nav-item-head"><a href="#reviews">Reviews</a></li>
+        <li class="nav-item-head"><a href="#faq">FAQ Updated & Extended</a></li>
+        <li class="nav-item-head"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </div>
 </header>
 
-    <main >
-      <!-- Loads the specified .html file -->
-      <header class="header">
-  <div class="container">
-    
+<div class="backdrop" data-visible="false">
+  <div class="modal-menu" id="modal-menu-header">
+    <button class="close-btn" id="close-menu-header" data-action="close">
+      <svg class="icon-close" width="32" height="32">
+        <use href="../img/sprite.svg#icon-closebtn"></use>
+      </svg>
+    </button>
+    <ul class="nav-list modal-nav">
+      <li class="nav-item"><a href="#home">Home</a></li>
+      <li class="nav-item"><a href="#candytipes">Candy Types & Boosters</a></li>
+      <li class="nav-item"><a href="#gamemechanics">Game Mechanics</a></li>
+      <li class="nav-item"><a href="#levelvariety">Level Variety</a></li>
+      <li class="nav-item"><a href="#candykingdom">Candy Kingdom Map</a></li>
+      <li class="nav-item"><a href="#strategytips">Strategy Tips</a></li>
+      <li class="nav-item"><a href="#events">Events & Bonuses</a></li>
+      <li class="nav-item"><a href="#reviews">Reviews</a></li>
+      <li class="nav-item"><a href="#faq">FAQ Updated & Extended</a></li>
+      <li class="nav-item"><a href="#contact">Contact</a></li>
+    </ul>
   </div>
-</header>
+</div>
+
+
+    <main>
+      <!-- Loads the specified .html file -->
+      <section class="hero" id="hero">
+  <div class="container hero-container">
+    <h3 class="match-title">
+      <span class="outlined-text" data-text="Match-3">Match-3</span>
+    </h3>
+
+    <h1 class="hero-title">Welcome to the Kingdom of Candy!</h1>
+    <img
+      src="../img/hero+header/princess_hero_desk_1x.png"
+      alt="Candy Princess"
+      class="princess-hero"
+    />
+
+    <div class="hero-descr-wrapper">
+      <p class="hero-descr">
+        Step into Royal Candy Mania, the most mouthwatering and majestic match-3
+        game of the year! Crush colorful candies, match marshmallows, and rule
+        your very own jelly kingdom — where every swipe brings royal
+        satisfaction
+      </p>
+    </div>
+  </div>
+</section>
+
       
 
       
@@ -50,10 +131,8 @@
       
       
       
-
-    </main>
-
-    <footer class="footer">
+      
+      <footer class="footer">
   <div class="container">
    <nav class="footer-nav" id="content">
     
@@ -76,6 +155,6 @@
   </div>
 </footer>
 
-
+    </main>
   </body>
 </html>
