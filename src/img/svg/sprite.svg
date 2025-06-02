@@ -3,6 +3,15 @@
 <symbol id="icon-closebtn" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M6.667 6.667l18.667 18.667M6.667 25.334l18.667-18.667"></path>
 </symbol>
+
+<symbol id="icon-arrowright" viewBox="0 0 40 32">
+<path d="M3.333 15.999c0 0.736 0.746 1.333 1.667 1.333h30c0.92 0 1.667-0.597 1.667-1.333s-0.746-1.333-1.667-1.333h-30c-0.92 0-1.667 0.597-1.667 1.333z"></path>
+<path d="M3.822 15.058c-0.651 0.521-0.651 1.365 0 1.886l11.667 9.333c0.651 0.521 1.706 0.521 2.357 0s0.651-1.365 0-1.886l-10.488-8.391 10.488-8.39c0.651-0.521 0.651-1.365 0-1.886s-1.706-0.521-2.357 0l-11.667 9.333z"></path>
+</symbol>
+<symbol id="icon-arrowleft" viewBox="0 0 40 32">
+<path d="M36.667 15.999c0 0.736-0.746 1.333-1.667 1.333h-30c-0.92 0-1.667-0.597-1.667-1.333s0.746-1.333 1.667-1.333h30c0.92 0 1.667 0.597 1.667 1.333z"></path>
+<path d="M36.178 15.058c0.651 0.521 0.651 1.365 0 1.886l-11.667 9.333c-0.651 0.521-1.706 0.521-2.357 0s-0.651-1.365 0-1.886l10.488-8.391-10.488-8.39c-0.651-0.521-0.651-1.365 0-1.886s1.706-0.521 2.357 0l11.667 9.333z"></path>
+</symbol>
 <symbol id="icon-burger" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M6.667 6.667h18.667M6.667 25.334h18.667"></path>
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M6.667 16h18.667"></path>

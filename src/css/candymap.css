@@ -78,7 +78,6 @@
 .swiper {
     width: 288px;
     margin: 0 auto;
-    overflow: hidden;
     position: relative; 
 
 }
@@ -109,12 +108,13 @@
 
 .swiper-button-prev,
 .swiper-button-next {
+    background: none;
     border: none;
     cursor: pointer;
+    color: #5C2D91;
+    transition: color 0.3s ease;
 }
 
-.btn-icon {
-    fill: #fff; }
 
 
 
