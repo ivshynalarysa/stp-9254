@@ -11,7 +11,6 @@ width: 100%;
 .background-layer {
   position: absolute;
   inset: 0;
-  z-index: 0;
   background-image: url('../img/hero+header/bg_hero_mob_1x.jpg');
   background-repeat: no-repeat;
   background-position: center;
@@ -20,10 +19,7 @@ width: 100%;
 }
 
 .container.header-container {
-  position: relative;
-  z-index: 1;
   padding: 10px 16px;
-  width: 100%;
   min-height: 60px;
   background-color: transparent;
 }
@@ -60,7 +56,7 @@ width: 100%;
   background-color: #FFD700;
   backdrop-filter: blur(4px);
   display: none;
-  overflow: hidden;
+
   z-index: 1000;
 }
 
@@ -79,7 +75,7 @@ width: 100%;
 }
 
 .modal-nav {
-  overflow-y: auto;
+ 
   height: 100%;
   padding-right: 16px;
   list-style: none;
@@ -107,7 +103,6 @@ width: 100%;
   height: 32px;
   align-items: center;
   cursor: pointer;
-  z-index: 9001;
 }
 
 .modal-nav {
@@ -127,35 +122,34 @@ width: 100%;
 
 @media only screen and (min-width: 1200px) {
   .background-layer {
-    background-image: image-set(url('../img/hero+header/bg_hero_desk_1x.jpg') 1x,
-        url('../img/hero+header/bg_hero_desk_2x.jpg') 2x);
+    background-image: image-set
+    (url('../img/hero+header/bg_hero_desk_1x.jpg') 1x,
+    url('../img/hero+header/bg_hero_desk_2x.jpg') 2x);
+    border-radius: 12px;
   }
 
   .container.header-container {
+    margin: 0 auto;
     padding: 10px 86px;
     min-height: 180px;
+    min-width: 1220px;
     background-color: transparent;
-    position: relative;
-    z-index: 1;
   }
 
-.logo-header {
+  .logo-header {
     height: 70px;
     width: 80px;
-    z-index: 2;
     margin: 0 auto;
     margin-bottom: 20px;
   }
 
-
-.burger-btn {
+  .burger-btn {
   display: none;
-  
-}
+  }
 
-.navigation {
+  .navigation {
   display: flex;
-}
+  }
 
 .nav-list-head {
   display: flex;
@@ -165,13 +159,25 @@ width: 100%;
   row-gap: 20px;
   column-gap: 24px;
   list-style: none;
+  z-index: 501;
 }
-  .nav-item-head {
+  .nav-item-head a {
+  display: block;
   font-family: "Fredoka", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 1;
   color: #5c2d91;
+
+  
+}
+
+.nav-item-head a:hover,
+.nav-item-head a:focus {
+  color: #ff4eb8;
+  text-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
+  
+
 }
 
 .modal-menu {
