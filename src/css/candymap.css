@@ -1,0 +1,125 @@
+.candy-map {}
+
+.candy-map-container {
+    min-width: 320px;
+    padding-top: 15px;
+    padding-bottom: 50px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+}
+
+.candy-map-header {
+    font-family: "Baloo 2", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.33;
+    color: #ff4eb8;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    transform: rotate(-5deg);
+    text-align: start;
+    margin: 0 auto;
+    margin-bottom: 34px;
+    padding-right: 45px;
+    padding-left: 16px;
+}
+
+.candy-map-descr {
+    font-family: "Fredoka", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.16;
+    color: #5c2d91;
+    margin-bottom: 40px;
+    padding-left: 16px;
+    padding-right: 31px;
+}
+
+
+
+
+
+.candy-map-list-item {}
+
+.candy-map-wrapper {
+    border: 1px solid #40087f;
+   width: 100%;
+    height: 180px;
+    box-shadow: inset 0 4px 25px 0 #40087f;
+    background: #fff;
+}
+
+.candy-map-icon {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+
+}
+
+.candy-region-name {
+    font-family: "Fredoka", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.33;
+    text-align: center;
+    color: #ff4eb8;
+
+}
+
+.candy-region-descr {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #ff4eb8;
+}
+
+.swiper {
+    width: 288px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative; 
+
+}
+.swiper-wrapper {
+    display: flex;
+ 
+     
+    
+    margin: 0 auto; 
+    transition: transform 0.4s ease-in-out;
+    padding: 0;
+}
+
+
+.swiper-slide {
+  
+   
+    flex-shrink: 0;
+    width: 288px
+}
+
+.container-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 50px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    border: none;
+    cursor: pointer;
+}
+
+.btn-icon {
+    fill: #fff; }
+
+
+
+.swiper-wrapper {}
+
+.container-btn {}
+
+
