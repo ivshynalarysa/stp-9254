@@ -56,6 +56,10 @@
     width: 223px;
     
 }
+.bigbox {
+    height: 70px;
+    
+}
 
 .strategytips-text2 {
     font-size: 24px;
@@ -148,6 +152,7 @@
 
 .tips-yellow-vector {
     display: block;
+  
 }
 
 
