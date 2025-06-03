@@ -130,7 +130,7 @@ width: 100%;
 
   .container.header-container {
     margin: 0 auto;
-    padding: 10px 86px;
+    padding: 10px 86px 0 86px;
     min-height: 180px;
     min-width: 1220px;
     background-color: transparent;
