@@ -1,7 +1,6 @@
 .level-variety {
-    padding-left: 16px;
-        padding-right: 16px;
         background-image: url('/img/game_mechanics/bg_stars_mob.png');
+        background: rgba(255, 255, 255, 0.8);
         background-size: cover;
         background-position: center;
         background-repeat: repeat;
