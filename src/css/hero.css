@@ -105,8 +105,12 @@ overflow: hidden;
     display: block;
     position: relative;
     z-index: 2;
+    transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.google-play-btn:hover {
+    box-shadow: 2px 4px 5px 0 rgba(160, 65, 255, 0.5);
+}
 .google-btn-img {
     height: 60px;
     background-color: transparent;

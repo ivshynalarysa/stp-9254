@@ -27,7 +27,6 @@
     margin: 0 auto;
     margin-bottom: 34px;
     padding-right: 45px;
-    padding-left: 16px;
 }
 
 .candy-types-descr {
@@ -37,8 +36,6 @@
     line-height: 1.16;
     color: #5c2d91;
     margin-bottom: 40px;
-    padding-left: 16px;
-    padding-right: 31px;
 }
 
 .candy-types-list {
@@ -132,7 +129,6 @@
     .candy-types-descr {
         font-size: 48px;
         margin: 0 auto;
-        padding: 0;
         text-align: center;
         padding-bottom: 60px;
     }
