@@ -17,7 +17,7 @@ overflow: hidden;
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0.15;
-    z-index: 0; 
+    z-index: 0;
 }
 
 .match-title{
@@ -75,13 +75,22 @@ overflow: hidden;
     text-align: right;
     margin-left: 0;
 }
-    .princess-hero {
-    margin-top: 10px;
-    margin-bottom: 23px;
+.princess-hero {
     width: 80px;
     height: 100px;
     display: block;
-    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 23px;
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+.loly-hero {
+    display: none;
+}
+
+.knight-hero {
+    display: none;
 }
 
 .hero-descr {
@@ -90,12 +99,17 @@ overflow: hidden;
 
 .google-play-btn{
     border-radius: 10px;
-    padding: 10px;
     width: 288px;
     height: 60px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 0 auto;
     display: block;
+    position: relative;
+    z-index: 2;
+}
+
+.google-btn-img {
+    height: 60px;
+    background-color: transparent;
     margin-left: auto;
     margin-right: auto;
 }
@@ -117,27 +131,25 @@ overflow: hidden;
 }
 
 @media only screen and (min-width: 1200px) {
-
-    .hero {
-        position: relative;
-    }
-
     .hero-container {
+        padding-top: 180px;
         padding-left: 86px;
         padding-right: 86px;
-        padding-bottom: 35px;  
+        padding-bottom: 35px;
+        position: relative;
     }
 
     .match-title {
         font-size: 64px;
         line-height: 1.13;
-        padding-top: 212px;
+        padding-top: 20px;
     } 
     
     .hero-title {
         font-size: 96px;
         line-height: 1.04;
-        padding-top: 0px;
+        padding: 0;
+        margin-bottom: 0;
         max-height: 300px;
     }
 
@@ -155,19 +167,72 @@ overflow: hidden;
         display: block;
         text-align: right;     
     }
-    .princess-hero {
+  
+    .image-chaos-wrapper {
         position: absolute;
         top: 0;
-        right: 10.15px;
-        border: 1px solid #ffd700;
-        border-radius: 20px;
-        width: 90px;
-        height: 140px;
-        box-shadow: 0 4px 4px #ffd700;
-        transform: rotate(6deg);
+        left: 0;
+        right: 0;
+        bottom: 0;   
+        padding: 180px 86px 35px;
         pointer-events: none;
-        z-index: 2;    
+        z-index: 1;
+        
     }
+        .princess-hero {
+            position: absolute;
+            margin: 0;
+            border: 1px solid #ffd700;
+            border-radius: 20px;
+            top: 250px;
+            right: 170px;
+            width: 100px;
+            height: 120px;
+            transition: transform 0.3s ease;
+            pointer-events: auto
+        }
+
+        .princess-hero:hover {
+            transform: rotate(10deg) scale(1.05);
+            box-shadow: 0 4px 4px #ffd700;
+
+        }
+       
+        .loly-hero {
+            position: absolute;
+            display: block;
+            top: 725px;
+            right: 340px;
+            width: 100px;
+            height: 110px;
+            transition: transform 0.3s ease;
+            pointer-events: auto
+            
+        }
+        .loly-hero:hover {
+            transform: rotate(15deg) scale(1.05);
+
+        }
+    
+        .knight-hero{
+            position: absolute;
+            border: 1px solid #0b6bfc;
+            border-radius: 20px;
+            display: block;
+            bottom: 80px;
+            right: 86px;
+            width: 100px;
+            height: 100px;
+            transition: transform 0.3s ease;
+            pointer-events: auto;
+        
+        } 
+        
+        .knight-hero:hover {
+             transform: rotate(-10deg) scale(1.05);
+            box-shadow: 0 4px 4px 0 #0b6bfc;
+
+        }
 
     .hero-descr-wrapper {
         display: flex;
@@ -191,6 +256,13 @@ overflow: hidden;
         margin: 0;
         padding: 0;
         display: inline;
+        width: 282px;
+        height: 90px;
+    }
+
+    .google-btn-img {
+        width: 282px;
+        height: 90px;
     }
 
     .hero-moto{
