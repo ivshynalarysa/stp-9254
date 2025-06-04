@@ -5,6 +5,7 @@ if (!localStorage.getItem('cookiesConsent')) {
   banner.setAttribute('data-visible', 'true');
   banner.style.display = 'block';
  
+ 
 }
 
 buttons.forEach(button => {

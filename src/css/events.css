@@ -25,10 +25,24 @@
     line-height: 1.2;
     color: #5c2d91;
 }
+
+.events-box {
+     background-image:
+        url(../img/events/event-vector-mob.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        position: relative;
+        height: 848px;
+
+        
+}
 .events-list {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     color: #9747ff;
-   
+    padding: 10px 0;
     margin-top: 40px;
     margin-bottom: 40px;
 }
@@ -42,13 +56,17 @@
     height: 148px;
     box-shadow: inset 0 0 25px 0 #a041ff;
     background: #fff0f8;
-    position: absolute;
+  
   
     
 }
+
+.eventsright {
+  margin-left: 98px;
+}
 .eventsfirst {
     top: 12px;
-    left: 98px;
+    right: 0;
    
 }
 
@@ -60,7 +78,7 @@
 .eventsthird {
 
     top: 336px;
-    left: 98px;
+    right: 0;
 }
 
 .eventsfourth {
@@ -71,7 +89,7 @@
 
 .eventsfifth {
     top: 660px;
-    left: 98px;
+    right: 0;
 
 }
 
@@ -85,6 +103,10 @@
 }
 .events-item-text {
    line-height: 1.5;
+}
+
+.events-yellow-vector {
+    display: none;
 }
 
 
@@ -114,12 +136,38 @@
     font-size: 48px;
     line-height: 1.2;
     text-align: center;
+    margin-bottom: 82px;
   
 }
-.events-list {
-    margin-top: 80px;
-    margin-bottom: 96px;
 
+.events-box {
+     background-image:
+        url(../img/events/events-vector-deck.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        position: relative;
+        height: 396px;
+        width: 990px;
+        margin: 0 auto;
+        align-content: center;
+        justify-content: center;
+
+        
+}
+.events-list {
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 10px 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+
+}
+
+.events-item {
+    position: absolute;
 }
 
 .events-img-vector {
@@ -127,40 +175,45 @@
 }
 
 .eventsfirst {
-    top: -10px;
-    left: 340px;
+    top: -20px;
+    left: 100px;
    
 }
 
 .eventssecond {
-    top: -40px;
-    left: 680px;
+    top: -60px;
+    left: 540px;
 }
 
 .eventsthird {
 
-    top: 136px;
-    left: 530px;
+    top: 130px;
+    left: 286px;
 }
 
 .eventsfourth {
-    top: 230px;
-    left: 240px;
+    top: 190px;
+    left: 12px;
 
 }
 
 .eventsfifth {
-    top: 280px;
-    left: 780px;
+    top: 272px;
+    left: 540px;
 
 }
 
 .events-text-bottom {
+    margin-top: 120px;
     font-weight: 400px;
     font-size: 24px;
     line-height: 1.2;
     text-align: start;
     
+}
+
+.events-yellow-vector {
+    display: block;
 }
 
 }
