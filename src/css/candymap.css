@@ -6,7 +6,6 @@
     padding-bottom: 50px;
     padding-left: 16px;
     padding-right: 16px;
-
 }
 
 .candy-map-header {
@@ -20,8 +19,6 @@
     text-align: start;
     margin: 0 auto;
     margin-bottom: 34px;
-    padding-right: 45px;
-    padding-left: 16px;
 }
 
 .candy-map-descr {
@@ -31,29 +28,33 @@
     line-height: 1.16;
     color: #5c2d91;
     margin-bottom: 40px;
-    padding-left: 16px;
-    padding-right: 31px;
 }
-
-
-
-
 
 .candy-map-list-item {}
 
 .candy-map-wrapper {
+    display: flex;
     border: 1px solid #40087f;
-   width: 100%;
+    width: 100%;
     height: 180px;
     box-shadow: inset 0 4px 25px 0 #40087f;
     background: #fff;
+    padding: 25px;
+    gap: 25px;
+}
+
+.mob-map-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .candy-map-icon {
     flex-shrink: 0;
     width: 50px;
     height: 50px;
-
 }
 
 .candy-region-name {
@@ -63,7 +64,6 @@
     line-height: 1.33;
     text-align: center;
     color: #ff4eb8;
-
 }
 
 .candy-region-descr {
@@ -78,25 +78,19 @@
 .swiper {
     width: 288px;
     margin: 0 auto;
-    position: relative; 
-
+    position: relative;
 }
+
 .swiper-wrapper {
     display: flex;
- 
-     
-    
-    margin: 0 auto; 
+    margin: 0 auto;
     transition: transform 0.4s ease-in-out;
     padding: 0;
 }
 
-
 .swiper-slide {
-  
-   
     flex-shrink: 0;
-    width: 288px
+    width: 288px;
 }
 
 .container-btn {
@@ -111,15 +105,148 @@
     background: none;
     border: none;
     cursor: pointer;
-    color: #5C2D91;
+    color: #5c2d91;
     transition: color 0.3s ease;
 }
 
+.candy-map-desktop {
+    display: none;
+}
 
 
+@media only screen and (min-width: 1200px) {
+    .candy-map-container {
+        padding-left: 86px;
+        padding-right: 86px;
+        margin: 0 auto;
+        padding-top: 28px;
+        padding-bottom: 35px;
+    }
 
-.swiper-wrapper {}
+    .candy-map-header {
+        font-size: 64px;
+        margin-top: 22px;
+        margin-bottom: 44px;
+    }
 
-.container-btn {}
+    .candy-map-descr {
+        font-size: 48px;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 60px;
+    }
 
+    .swiper {}
 
+    .swiper-wrapper {}
+
+    .swiper-slide {}
+
+    .hide-on-mobile {
+        display: block;
+    }
+
+    .candy-map-wrapper {
+        display: flex;
+        border: none;
+        width: 100%;
+        height: 180px;
+        box-shadow: none;
+        background: transparent;
+        padding: 25px;
+        gap: 25px;
+    }
+
+    .candy-map-desktop {
+        display: flex;
+        margin: 0 auto;
+        position: relative;
+        width: 678px;
+        height: 972px;
+        background-image: url("../img/candy_map/deskbg.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-color: #fff;
+    }
+
+    .map-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+        position: absolute;
+    }
+
+    .map-item.item-temple {
+        display: flex;
+        align-items: flex-start;
+        top: 48px;
+        right: 22px;
+    }
+
+    .map-item.item-volcano {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: row-reverse;
+        top: 100px;
+        left: 22px;
+    }
+
+    .map-item.item-glacier {
+        display: flex;
+        align-items: flex-start;
+        top: 370px;
+        right: 22px;
+    }
+
+    .map-item.item-valley {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: row-reverse;
+        top: 430px;
+        left: 22px;
+    }
+
+    .map-item.item-marsh {
+        display: flex;
+        align-items: flex-start;
+        top: 700px;
+        right: 22px;
+    }
+
+    .map-item.text {
+        position: absolute;
+        display: flex;
+        align-items: flex-start;
+        gap: 0;
+        flex-direction: column;
+        top: 780px;
+        left: 22px;
+    }
+
+    .map-text {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        width: 158px;
+        height: 160px;
+    }
+
+    .candy-map-afterlist {
+        font-family: "Fredoka", sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.33;
+        color: #40087f;
+        max-width: 300px;
+    }
+
+    .gradient-line {
+        display: block;
+    }
+
+    .swiper {
+        display: none;
+    }
+}
