@@ -28,7 +28,7 @@
 
 .events-box {
      background-image:
-        url(../img/events/event-vector-mob.png);
+        url(/img/events/event-vector-mob.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100% 100%;
@@ -121,7 +121,7 @@
    
     font-size: 64px;
     line-height: 1.1;
-    margin-bottom: 40px;
+    
    
 }
 
@@ -136,13 +136,13 @@
     font-size: 48px;
     line-height: 1.2;
     text-align: center;
-    margin-bottom: 82px;
+   
   
 }
 
 .events-box {
      background-image:
-        url(../img/events/events-vector-deck.png);
+        url(/img/events/events-vector-deck.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100% 100%;
@@ -152,6 +152,8 @@
         margin: 0 auto;
         align-content: center;
         justify-content: center;
+        margin-top: 82px;
+        margin-bottom: 220px;
 
         
 }
@@ -160,8 +162,8 @@
     height: 100%;
     display: block;
     padding: 10px 0;
-    margin-top: 0;
-    margin-bottom: 0;
+ margin-top: 0;
+ margin-bottom: 0;
     position: relative;
 
 }
@@ -204,7 +206,7 @@
 }
 
 .events-text-bottom {
-    margin-top: 120px;
+    
     font-weight: 400px;
     font-size: 24px;
     line-height: 1.2;
