@@ -1,3 +1,25 @@
+.hero {
+  position: relative;
+overflow: hidden;
+}
+
+.hero-container {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 40px;
+    
+}
+.background-layer-hero {
+    position: absolute;
+    inset: 0;
+    background-image: url('/img/hero+header/bg_hero_mob_2x.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.15;
+    z-index: 0;
+}
+
 .match-title{
     font-family: "Fredoka", sans-serif;
     font-weight: 600;
@@ -43,57 +65,183 @@
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     display: block;
     transform: rotate(-5deg);
-    text-align: start;
-    margin: 0 auto;
-}
-    .princess-hero {
+    text-align:center;
     margin-top: 10px;
+    margin-bottom: 23px;
+}
+
+.hero-title .align-right {
+    display: block;
+    text-align: right;
+    margin-left: 0;
+}
+.princess-hero {
     width: 80px;
     height: 100px;
     display: block;
-    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 23px;
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+.loly-hero {
+    display: none;
+}
+
+.knight-hero {
+    display: none;
 }
 
 .hero-descr {
     display: none;
 }
 
-@media only screen and (min-width: 1200px) {
+.google-play-btn{
+    border-radius: 10px;
+    width: 288px;
+    height: 60px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    z-index: 2;
+    transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-    .hero {
+.google-play-btn:hover {
+    box-shadow: 2px 4px 5px 0 rgba(160, 65, 255, 0.5);
+}
+.google-btn-img {
+    height: 60px;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-moto {
+    font-family: "Fredoka", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.33333;
+    background: linear-gradient(90deg, #5c2d91 0%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 17px;
+}
+
+.gradient-line-hero {
+    display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+    .hero-container {
+        padding-top: 180px;
+        padding-left: 86px;
+        padding-right: 86px;
+        padding-bottom: 35px;
         position: relative;
     }
 
     .match-title {
         font-size: 64px;
         line-height: 1.13;
-        padding-top: 212px;
-        
+        padding-top: 20px;
     } 
-    .princess-hero {
-        position: absolute;
-        top: 0;
-        right: 10.15px;
-        border: 1px solid #ffd700;
-        border-radius: 20px;
-        width: 90px;
-        height: 140px;
-        box-shadow: 0 4px 4px #ffd700;
-        transform: rotate(6deg);
-        pointer-events: none;
-        z-index: 2;    
-    }
-
+    
     .hero-title {
         font-size: 96px;
         line-height: 1.04;
-        padding-top: 10px;
-        min-width: fit-content;
+        padding: 0;
+        margin-bottom: 0;
+        max-height: 300px;
     }
+
+    .align-left {
+        display: block;
+        text-align: left;
+    }
+    
+    .align-center {
+        display: block;
+        text-align: center;
+     }
+    
+    .align-right {
+        display: block;
+        text-align: right;     
+    }
+  
+    .image-chaos-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;   
+        padding: 180px 86px 35px;
+        pointer-events: none;
+        z-index: 1;
+        
+    }
+        .princess-hero {
+            position: absolute;
+            margin: 0;
+            border: 1px solid #ffd700;
+            border-radius: 20px;
+            top: 250px;
+            right: 170px;
+            width: 100px;
+            height: 120px;
+            transition: transform 0.3s ease;
+            pointer-events: auto
+        }
+
+        .princess-hero:hover {
+            transform: rotate(10deg) scale(1.05);
+            box-shadow: 0 4px 4px #ffd700;
+
+        }
+       
+        .loly-hero {
+            position: absolute;
+            display: block;
+            top: 725px;
+            right: 340px;
+            width: 100px;
+            height: 110px;
+            transition: transform 0.3s ease;
+            pointer-events: auto
+            
+        }
+        .loly-hero:hover {
+            transform: rotate(15deg) scale(1.05);
+
+        }
+    
+        .knight-hero{
+            position: absolute;
+            border: 1px solid #0b6bfc;
+            border-radius: 20px;
+            display: block;
+            bottom: 80px;
+            right: 86px;
+            width: 100px;
+            height: 100px;
+            transition: transform 0.3s ease;
+            pointer-events: auto;
+        
+        } 
+        
+        .knight-hero:hover {
+             transform: rotate(-10deg) scale(1.05);
+            box-shadow: 0 4px 4px 0 #0b6bfc;
+
+        }
 
     .hero-descr-wrapper {
         display: flex;
-        justify-content: flex-start;
+        flex-direction: column;
+        gap: 60px;
     }
 
     .hero-descr {
@@ -106,6 +254,28 @@
         text-align: left;
         color: #5c2d91;
         padding-top: 30px;
-        margin-bottom: 38px;
+    }
+
+    .google-play-btn {
+        margin: 0;
+        padding: 0;
+        display: inline;
+        width: 282px;
+        height: 90px;
+    }
+
+    .google-btn-img {
+        width: 282px;
+        height: 90px;
+    }
+
+    .hero-moto{
+        letter-spacing: 0.21em;
+        -webkit-text-fill-color: transparent;
+        margin-top: 50px;
+    }
+
+    .gradient-line-hero {
+        display: block;
     }
 }

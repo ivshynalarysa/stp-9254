@@ -9,6 +9,7 @@
 
 .game-mechanics-container {
     min-width: 320px;
+    padding-bottom: 40px;
 }
 
 .mechanics-header {
@@ -19,11 +20,7 @@
     color: #ff4eb8;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     transform: rotate(-5deg);
-    text-align: start;
-    margin: 0 auto;
     margin-bottom: 34px;
-    padding-right: 45px;
-    padding-left: 16px;
 }
 
 .mechanics-descr {
@@ -33,8 +30,6 @@
     line-height: 1.16667;
     color: #5c2d91;
     margin-bottom: 40px;
-    padding-left: 16px;
-    padding-right: 31px;
 }
 
 
@@ -82,8 +77,8 @@
 .mechanics-afterlist {
     font-family: "Fredoka", sans-serif;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.28571;
+    font-size: 24px;
+    line-height: 1.33;
     background: linear-gradient(90deg, #5c2d91 0%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -98,7 +93,7 @@
     .game-mechanics {
         background-image: 
         linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, #ffffff 90%),
-            url('/img/game_mechanics/bg_stars_desk.png');
+        url('/img/game_mechanics/bg_stars_desk.png');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat; 
@@ -118,7 +113,6 @@
     .mechanics-descr {
         font-size: 48px;
         margin: 0 auto;
-        padding: 0;
         text-align: center;
         padding-bottom: 40px;
         
