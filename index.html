@@ -32,7 +32,9 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/stp-9254/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/stp-9254/assets/styles-CZWuLZtU.css">
+    <link rel="modulepreload" crossorigin href="/stp-9254/assets/vendor-BOHGgCAW.js">
+    <link rel="stylesheet" crossorigin href="/stp-9254/assets/vendor-eLa99goH.css">
+    <link rel="stylesheet" crossorigin href="/stp-9254/assets/styles-DlcoD6rd.css">
   </head>
   <body>
     <div class="background-layer"></div>
@@ -499,24 +501,8 @@
         <span class="space2-events">& Bonuses</span>
     </h2>
     <p class="events-text">There’s Always Something Sweet Happening</p>
-    <ul class="events-list">
-        <picture>   
-            <source
-                srcset="/stp-9254/assets/events-vector-deck-C01K3bzW.png"
-                media="(min-width: 1200px)"
-            />
-            <source
-                srcset="/stp-9254/assets/event-vector-mob-CGtrZtVl.png"
-                media="(max-width: 1200px)"
-              />
-             <img  class="events-img-vector" 
-             src="/stp-9254/assets/events-vector-deck-C01K3bzW.png"
-             height="848"
-             alt="purple vector">
-            
-            </picture>
-
-        
+    <div class="events-box">
+        <ul class="events-list">
         <li class="events-item  eventsfirst eventsright">
             <h2 class="events-item-title">Daily Spin</h2>
             <p class="events-item-text">Get a new booster every morning</p>
@@ -538,6 +524,9 @@
             <p class="events-item-text">Halloween, Valentine’s, etc.</p>
         </li>
     </ul>
+
+    </div>
+    
     <p class="events-text events-text-bottom">Exclusive events reward the most loyal candy kings and queens!</p>
     <div class="events-yellow-vector">
         <img src="/stp-9254/assets/tips6-zQVtqwr9.png"
@@ -548,14 +537,67 @@
     </div>
 </section>
       <section class="reviews" id="reviews">
-    <div class="container">   
+  <div class="container">
     <h2 class="reviews-title">Reviews</h2>
+    <p class="reviews-subtitle">Why Players Love Royal Candy Mania</p>
 
+    <div class="swiper" id="reviews-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide reviews-card">
+           <svg class="reviews-icon" width="35" height="35">
+            <use href="/stp-9254/assets/sprite-BgCeVJ9U.svg#icon-goback"></use>
+          </svg> 
+          <p class="reviews-text">“Gorgeous graphics and a relaxing vibe. 
+            I play every day after work — feels like candy meditation!”</p>
+          <p class="reviews-user-name">Sophia W.<br>UK</p>
+        </div>
+        <div class="swiper-slide reviews-card">
+          <svg class="reviews-icon" width="35" height="35">
+            <use href="/stp-9254/assets/sprite-BgCeVJ9U.svg#icon-goback"></use>
+          </svg> 
+          <p class="reviews-text">“The animations are soooo satisfying!
+             I love the little jelly pops when you do combos.”</p>
+          <p class="reviews-user-name">Dario R.<br>Spain</p>
+        </div>
+        <div class="swiper-slide reviews-card">
+          <svg class="reviews-icon" width="35" height="35">
+            <use href="/stp-9254/assets/sprite-BgCeVJ9U.svg#icon-goback"></use>
+          </svg> 
+          <p class="reviews-text"> “Finally a match-3 game without annoying timers or forced ads. 
+           Just pure fun.”</p>
+          <p class="reviews-user-name">Lina C.<br>Germany</p>
+        </div>
+        <div class="swiper-slide reviews-card">
+          <svg class="reviews-icon" width="35" height="35">
+            <use href="/stp-9254/assets/sprite-BgCeVJ9U.svg#icon-goback"></use>
+          </svg> 
+          <p class="reviews-text" “something else”></p>
+          <p class="reviews-user-name">someone<br>somewhere</p>
+        </div>
+        <div class="swiper-slide reviews-card">
+           <svg class="reviews-icon" width="35" height="35">
+            <use href="/stp-9254/assets/sprite-BgCeVJ9U.svg#icon-goback"></use>
+           </svg> 
+          <p class="reviews-text">“My kids and I both play — it’s 
+          colorful, friendly, and actually clever in later levels!”</p>
+          <p class="reviews-user-name">Aanya M.<br>India</p>
+        </div>
+        <div class="swiper-slide reviews-card">
+            <svg class="reviews-icon" width="35" height="35">
+             <use href="/stp-9254/assets/sprite-BgCeVJ9U.svg#icon-goback"></use>
+            </svg> 
+          <p class="reviews-text">“something else”</p>
+          <p class="reviews-user-name"><br>somewhere</p>
+        </div>
+      </div>
 
-
-    
+      <!-- Навігація -->
+      <div class="swiper-button-prev" id="reviews-swiper-prev"></div>
+      <div class="swiper-button-next" id="reviews-swiper-next"></div>
     </div>
+  </div>
 </section>
+
       <section class="faq" id="faq">
     <div class="container">
     <h2 class="faq-title">
@@ -646,11 +688,11 @@
   <div class="container">
    <nav class="footer-nav" id="content">
     
-       <a class="footer-link" href="policy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+       <a class="footer-link" href="policy.html" target="_self" rel="noopener noreferrer">Privacy Policy</a>
    
-       <a class="footer-link" href="terms.html" target="_blank" rel="noopener noreferrer">Terms of Use</a>
+       <a class="footer-link" href="terms.html" target="_self" rel="noopener noreferrer">Terms of Use</a>
   
-      <a class="footer-link" href="cookies.html" target="_blank" rel="noopener noreferrer">Cookie Policy</a>
+      <a class="footer-link" href="cookies.html" target="_self" rel="noopener noreferrer">Cookie Policy</a>
    
    </nav>
    <ul class="footer-list-rights">
