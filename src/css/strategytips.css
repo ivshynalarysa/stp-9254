@@ -53,7 +53,7 @@
     text-align: center;
     border: 2px solid #ff4eb8;
     height: 50px;
-    width: 223px;
+    min-width: 228px;
     
 }
 .bigbox {
