@@ -34,7 +34,7 @@
     <script type="module" crossorigin src="/stp-9254/index.js"></script>
     <link rel="modulepreload" crossorigin href="/stp-9254/assets/vendor-BOHGgCAW.js">
     <link rel="stylesheet" crossorigin href="/stp-9254/assets/vendor-eLa99goH.css">
-    <link rel="stylesheet" crossorigin href="/stp-9254/assets/styles-sI4agwpI.css">
+    <link rel="stylesheet" crossorigin href="/stp-9254/assets/styles-HvKlDEwy.css">
   </head>
   <body>
     <div class="background-layer"></div>
@@ -764,10 +764,19 @@
     
     <p class="events-text events-text-bottom">Exclusive events reward the most loyal candy kings and queens!</p>
     <div class="events-yellow-vector">
-        <img src="/img/tips/tips6.png"
-        width="500"
-        height="10"
-        alt="yellow line">
+          <picture>
+            <source
+              srcset="/stp-9254/assets/tipsvector-zQVtqwr9.png 1x, /stp-9254/assets/tipsvector-2x-hYiWx_33.png 2x"
+              media="(min-width: 1200px)"
+            />
+          
+           <img class="tips-yellow-vector" 
+              src="/stp-9254/assets/tipsvector-zQVtqwr9.png"
+              srcset="/stp-9254/assets/tipsvector-2x-hYiWx_33.png 2x"
+              width="500"
+              height="10"
+              alt="yellow-vector">
+    </picture>
     </div>
     </div>
 </section>
@@ -866,8 +875,10 @@
 
   <div class="faq-track">
     <div class="faq-item" data-index="0" data-open="true">
-    <div class="faq-toggle-icon" data-menu-handler>
-
+    <div class="faq-toggle-btn" data-menu-handler>
+          <svg class="faq-toggle-icon" width="32" height="32">
+            <use href="/stp-9254/assets/sprite-fFEaf54L.svg#icon-faq-close"></use>
+          </svg>
     </div>
 
 
@@ -877,7 +888,7 @@
       </div>
     </div>
 
-    <div class="faq-item"  data-faq-item data-index="1">
+    <div class="faq-item" data-index="1" data-open="">
       <div class="faq-question">Can I play offline?</div>
       <div class="faq-answer">
         Absolutely. All main levels are available offline.
