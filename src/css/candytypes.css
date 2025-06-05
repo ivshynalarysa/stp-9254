@@ -4,15 +4,8 @@
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 40px;
-    min-width: 320px;
-}
-
-.candy-types-container {
-    min-width: 320px;
-    padding-top: 15px;
+    padding-top: 10px;
     padding-bottom: 40px;
-    padding-left: 16px;
-    padding-right: 16px;
 }
 
 .candy-types-header {
@@ -23,10 +16,11 @@
     color: #ff4eb8;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     transform: rotate(-5deg);
-    text-align: start;
-    margin: 0 auto;
     margin-bottom: 34px;
-    padding-right: 45px;
+}
+
+.line2-candy-types {
+    display: block;
 }
 
 .candy-types-descr {
@@ -41,10 +35,9 @@
 .candy-types-list {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
-    padding-right: 10px;
-    margin: 0 auto 40px auto;
-    max-width: 288px;
+    padding-bottom: 60px;
 }
 
 .candy-types-list-item {
@@ -104,20 +97,12 @@
 }
 
 @media only screen and (min-width: 1200px) {
-    .game-mechanics {
+    .candy-types {
         background-image: url('../img/candy_types/bgdesk.png');
-        background-size: cover;
+        background-size: contain;
         background-position: center;
-        background-repeat: no-repeat;
-        border-radius: 40px;
-    }
-
-    .candy-types-container {
-        padding-left: 86px;
-        padding-right: 86px;
-        margin: 0 auto;
-        padding-top: 28px;
-        padding-bottom: 35px;
+         background-repeat: no-repeat;
+        padding-bottom: 50px;
     }
 
     .candy-types-header {
@@ -125,7 +110,9 @@
         margin-top: 22px;
         margin-bottom: 44px;
     }
-
+    .line2-candy-types {
+        margin-left: 130px;
+    }
     .candy-types-descr {
         font-size: 48px;
         margin: 0 auto;

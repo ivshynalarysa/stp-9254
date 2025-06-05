@@ -1,11 +1,5 @@
 
 .background-layer {
-  position: absolute;
-  min-height: 60px;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 0;
   background-image: url('/img/hero+header/bg_hero_mob_1x.jpg'); 
   background-repeat: no-repeat;
   background-position: center;
@@ -17,18 +11,15 @@ header {
   position: fixed;
   z-index: 500;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 60px;
   background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
 
-.container.header-container {
-  padding: 10px 16px;
-  min-height: 60px;
-  background-color: transparent;
-}
+
 
 .logo-header {
   display: block;
@@ -127,20 +118,17 @@ header {
 
 @media only screen and (min-width: 1200px) {
   .background-layer {
-    background-image: image-set
-    (url('/img/hero+header/bg_hero_desk_1x.jpg') 1x,
-    url('/img/hero+header/bg_hero_desk_2x.jpg') 2x);
+    background-image: url('../img/hero+header/bg_hero_desk_2x.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
     border-radius: 12px;
-    height: 180px;
+   
+  }
+    header {
+      height: 180px;
   }
 
-  .container.header-container {
-    margin: 0 auto;
-    padding: 10px 86px 0 86px;
-    min-height: 180px;
-    min-width: 1220px;
-    background-color: transparent;
-  }
 
   .logo-header {
     height: 70px;

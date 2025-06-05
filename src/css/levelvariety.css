@@ -3,16 +3,11 @@
     background: rgba(255, 255, 255, 0.8);
     background-size: cover;
     background-position: center;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
+    padding-top: 10px;
+    padding-bottom: 40px;
 }
 
-.level-variety-container {
-    min-width: 320px;
-    padding-top: 15px;
-    padding-bottom: 40px;
-    padding-left: 16px;
-    padding-right: 16px;
-}
 
 .level-variety-header {
     font-family: "Baloo 2", sans-serif;
@@ -25,6 +20,10 @@
     text-align: start;
     margin: 0 auto;
     margin-bottom: 34px;
+}
+.line2-level-variety {
+    display: block;
+    margin-left: 70px;
 }
 
 .level-variety-descr {
@@ -54,8 +53,8 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
-    min-height: 242px;
-    min-width: 237px;
+    width: 242px;
+    height: 237px;
 }
 
 .level-text-cont {
@@ -104,25 +103,21 @@
 @media only screen and (min-width: 1200px) {
     .level-variety {
         background-image:
-         
         linear-gradient(to top, rgba(255, 255, 255, 0) 85%, #ffffff 95%),
         url('/img/game_mechanics/bg_stars_desk.png');
-        background-size: cover;
+        background-size: contain;
         background-position: center;
         background-repeat:no-repeat;
-    }
-
-    .level-variety-container {
-        padding-left: 86px;
-        padding-right: 86px;
-        margin: 0 auto;
-        padding-top: 28px;
-        padding-bottom: 35px;
+        padding-bottom: 50px;
     }
 
     .level-variety-header {
         font-size: 64px;
         margin-bottom: 44px;
+    }
+
+    .line2-level-variety {
+        margin-left: 130px;
     }
 
     .level-variety-descr {
