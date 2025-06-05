@@ -1,11 +1,11 @@
 .candy-types {
+    border-radius: 40px;
+    padding-bottom: 40px;
     background-image: url('../img/candy_types/bgmob.png');
-    background-size: cover;
+    background-size: 320px;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 40px;
-    padding-top: 10px;
-    padding-bottom: 40px;
 }
 
 .candy-types-header {
@@ -37,7 +37,7 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
 }
 
 .candy-types-list-item {
@@ -98,16 +98,14 @@
 
 @media only screen and (min-width: 1200px) {
     .candy-types {
-        background-image: url('../img/candy_types/bgdesk.png');
-        background-size: contain;
+        padding-bottom: 34px;
+         background-image: url('/img/candy_types/bgdesk.png');
+        background-size: 1200px;
         background-position: center;
          background-repeat: no-repeat;
-        padding-bottom: 50px;
     }
-
     .candy-types-header {
         font-size: 64px;
-        margin-top: 22px;
         margin-bottom: 44px;
     }
     .line2-candy-types {
@@ -133,7 +131,6 @@
         display: flex;
         align-items: center;
         gap: 50px;
-        
         width: 100%;
     }
      .candy-types-icon {

@@ -46,8 +46,7 @@
 .mob-map-cont {
     display: flex;
     flex-direction: column;
-    gap: 25px;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -75,10 +74,11 @@
     color: #ff4eb8;
 }
 
-.swiper {
+.swiper-mob {
     width: 288px;
     margin: 0 auto;
     position: relative;
+    overflow: hidden;
 }
 
 .swiper-wrapper {
@@ -93,21 +93,25 @@
     width: 288px;
 }
 
-.container-btn {
+.map-btn-nav {
     display: flex;
-    justify-content: center;
-    margin-top: 40px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
     gap: 50px;
+    width: 130px;
+    height: 32px;
+    margin: 0 auto;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
+.map-btn-nav-prev,
+.map-btn-nav-next {
     background: none;
     border: none;
-    cursor: pointer;
-    color: #5c2d91;
-    transition: color 0.3s ease;
+    font-size: 2rem;
+    color: #40087f; 
 }
+
 
 .candy-map-desktop {
     display: none;
@@ -133,7 +137,9 @@
         padding-bottom: 60px;
     }
 
-    .swiper {}
+    .swiper-mob {
+        display: none;
+    }
 
     .swiper-wrapper {}
 

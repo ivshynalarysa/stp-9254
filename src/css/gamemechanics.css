@@ -1,12 +1,10 @@
 .game-mechanics {
+    padding-bottom: 40px;
     background-image: url('../img/game_mechanics/bg_stars_mob.png');
-    background-size: cover;
+    background-size: 320px;
     background-position: center;
     background-repeat: no-repeat;
-    padding-top: 10px;
-    padding-bottom: 40px;
 }
-
 
 .mechanics-header {
     font-family: "Baloo 2", sans-serif;
@@ -88,16 +86,14 @@
 }
 
 @media only screen and (min-width: 1200px) {
-
+    
     .game-mechanics {
-        background-image: 
-        linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, #ffffff 90%),
-        url('/img/game_mechanics/bg_stars_desk.png');
-        background-size: contain;
+        padding-bottom: 34px;
+        background-image:  url('/img/game_mechanics/bg_stars_desk.png');
+        background-size: 1200px;
         background-position: center;
         background-repeat: no-repeat; 
     }
-    
     
     .mechanics-header {
         font-size: 64px;

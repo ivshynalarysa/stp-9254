@@ -1,9 +1,4 @@
 .level-variety {
-    background-image: url('/img/game_mechanics/bg_stars_mob.png');
-    background: rgba(255, 255, 255, 0.8);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     padding-top: 10px;
     padding-bottom: 40px;
 }
@@ -102,12 +97,6 @@
 
 @media only screen and (min-width: 1200px) {
     .level-variety {
-        background-image:
-        linear-gradient(to top, rgba(255, 255, 255, 0) 85%, #ffffff 95%),
-        url('/img/game_mechanics/bg_stars_desk.png');
-        background-size: contain;
-        background-position: center;
-        background-repeat:no-repeat;
         padding-bottom: 50px;
     }
 
