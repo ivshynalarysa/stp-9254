@@ -1,24 +1,18 @@
 .hero {
-  position: relative;
-overflow: hidden;
-}
-
-.hero-container {
-    padding-left: 16px;
-    padding-right: 16px;
     padding-bottom: 40px;
-    
-}
-.background-layer-hero {
-    position: absolute;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
     inset: 0;
-    background-image: url('/img/hero+header/bg_hero_mob_2x.jpg');
-    background-size: cover;
+    background-image:linear-gradient(to bottom,
+            rgba(255, 255, 255, 0.9),
+            rgba(255, 255, 255, 0.9)),
+        url('/img/hero+header/bg_hero_mob_2x.jpg');
+    background-size: 320px;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.15;
     z-index: 0;
-}
+} 
 
 .match-title{
     font-family: "Fredoka", sans-serif;
@@ -43,8 +37,6 @@ overflow: hidden;
     position: absolute;
     left: 0;
     top: 0;
-    z-index: -1;
-    color: #5C2D91;
     text-shadow:
             -2px -2px 1px #5C2D91,
             2px -2px 1px #5C2D91,
@@ -122,7 +114,7 @@ overflow: hidden;
     font-family: "Fredoka", sans-serif;
     font-weight: 400;
     font-size: 24px;
-    line-height: 1.33333;
+    line-height: 1.33;
     background: linear-gradient(90deg, #5c2d91 0%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -135,26 +127,33 @@ overflow: hidden;
 }
 
 @media only screen and (min-width: 1200px) {
-    .hero-container {
-        padding-top: 180px;
-        padding-left: 86px;
-        padding-right: 86px;
-        padding-bottom: 35px;
-        position: relative;
-    }
-
+   .hero {
+    padding-bottom: 50px;
+       background-image: linear-gradient(to bottom,
+            rgba(255, 255, 255, 0.9),
+            rgba(255, 255, 255, 0.9) ), url('/img/hero+header/bg_hero_desk_2x.jpg');
+       background-size: 1200px;
+       background-position: center;
+       background-repeat: no-repeat;
+       
+   }
+   .hero .container {
+    position: relative;
+   }
     .match-title {
         font-size: 64px;
         line-height: 1.13;
         padding-top: 20px;
     } 
+    .outlined-text {
+        font-size: 64px;
+    }
     
     .hero-title {
         font-size: 96px;
         line-height: 1.04;
         padding: 0;
         margin-bottom: 0;
-        max-height: 300px;
     }
 
     .align-left {
@@ -171,30 +170,18 @@ overflow: hidden;
         display: block;
         text-align: right;     
     }
-  
-    .image-chaos-wrapper {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;   
-        padding: 180px 86px 35px;
-        pointer-events: none;
-        z-index: 1;
-        
-    }
-        .princess-hero {
+    .princess-hero {
             position: absolute;
             margin: 0;
             border: 1px solid #ffd700;
             border-radius: 20px;
-            top: 250px;
-            right: 170px;
+            top: 100px;
+            right: 150px;
             width: 100px;
             height: 120px;
             transition: transform 0.3s ease;
             pointer-events: auto
-        }
+    }
 
         .princess-hero:hover {
             transform: rotate(10deg) scale(1.05);
@@ -205,7 +192,7 @@ overflow: hidden;
         .loly-hero {
             position: absolute;
             display: block;
-            top: 725px;
+            top: 550px;
             right: 340px;
             width: 100px;
             height: 110px;

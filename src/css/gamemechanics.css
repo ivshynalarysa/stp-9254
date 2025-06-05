@@ -1,37 +1,34 @@
 .game-mechanics {
-    padding-left:16px;
-    padding-right: 16px;
+    padding-bottom: 40px;
     background-image: url('/img/game_mechanics/bg_stars_mob.png');
-    background-size: cover;
+    background-size: 320px;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-.game-mechanics-container {
-    min-width: 320px;
-    padding-bottom: 40px;
 }
 
 .mechanics-header {
     font-family: "Baloo 2", sans-serif;
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.33333;
+    line-height: 1.33;
     color: #ff4eb8;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     transform: rotate(-5deg);
     margin-bottom: 34px;
 }
 
+.line2-game-mechanics {
+    display: block;
+    margin-left: 70px;
+}
 .mechanics-descr {
     font-family: "Fredoka", sans-serif;
     font-weight: 400;
     font-size: 24px;
-    line-height: 1.16667;
+    line-height: 1.16;
     color: #5c2d91;
     margin-bottom: 40px;
 }
-
 
 .mechanics-list {
     margin-bottom: 45px;
@@ -89,20 +86,13 @@
 }
 
 @media only screen and (min-width: 1200px) {
-
+    
     .game-mechanics {
-        background-image: 
-        linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, #ffffff 90%),
-        url('/img/game_mechanics/bg_stars_desk.png');
-        background-size: cover;
+        padding-bottom: 34px;
+        background-image:  url('/img/game_mechanics/bg_stars_desk.png');
+        background-size: 1200px;
         background-position: center;
         background-repeat: no-repeat; 
-    }
-    
-    .game-mechanics-container {
-        padding-left: 86px;
-        padding-right: 86px;
-        margin: 0 auto;
     }
     
     .mechanics-header {
@@ -110,6 +100,10 @@
         margin-bottom: 44px;
     }
     
+    .line2-game-mechanics {
+         margin-left: 130px;   
+        
+    }
     .mechanics-descr {
         font-size: 48px;
         margin: 0 auto;
@@ -124,7 +118,6 @@
         align-items: center;
         gap: 16px;
         margin: 0 auto 32px auto;
-        max-width: 780px;
     }
     
     .mechanics-list-item {
