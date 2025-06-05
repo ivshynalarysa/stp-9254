@@ -30,7 +30,11 @@
 .faq-carousel {
   display: flex;
   align-items: center;
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
   max-width: 100%;
   margin-bottom: 40px;
   
@@ -38,8 +42,11 @@
 
 .faq-track {
   display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
   transition: transform 0.3s ease;
   gap: 24px;
+  min-width: max-content;
 
 }
 
@@ -58,6 +65,8 @@
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  flex: 0 0 auto;
+  scroll-snap-align: center;
 }
 
 .faq-item[data-open="true"] {
@@ -101,10 +110,13 @@
   text-align: center;
   color: #666;
   display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .faq-item[data-open="true"] .faq-answer {
   display: block;
+  opacity: 1;
 }
 
 /* Повертаємо текст питання на 180° у вузькому блоці */
@@ -147,7 +159,7 @@
 
 }
 
-.faq-toggle-icon {
+.faq-toggle-btn {
   position: absolute;
   top: 10px;
   right: 15px;
@@ -155,34 +167,12 @@
   height: 32px;
   background-color: transparent;
  }
-
-.faq-toggle-icon::before,
-.faq-toggle-icon::after {
-  content: '';
-  position: absolute;
-  background-color: #40087f;
-  transition: transform 0.3s ease;
+.faq-toggle-icon {
+  stroke: #5c2d91;
 }
 
-.faq-toggle-icon::before {
-  width: 12px;
-  height: 2px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.faq-toggle-icon::after {
-  width: 2px;
-  height: 12px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/* Якщо блок відкритий — показуємо лише “−” */
-.faq-item[data-open="true"] .faq-toggle-icon::after {
-  transform: scale(0); /* ховаємо вертикальну паличку */
+.faq-item[data-open="true"] .faq-toggle-icon  {
+ rotate: 45deg; 
 }
 .faq-btn-nav-desk {
   display: none;
@@ -241,4 +231,15 @@
  
 }
 
+.faq-carousel {
+    overflow-x: hidden;
+  }
+
+  .faq-item.faq-focused:not([data-open="true"]) {
+    outline: 3px solid #40087f;
+   box-shadow: 0 2px 10px 0 #ff4eb8
+   color(srgb rgb(174, 0, 255) green blue)
+   
+  }
 }
+
