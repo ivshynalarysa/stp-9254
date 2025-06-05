@@ -30,10 +30,12 @@
     border-radius: 50px;
     background-color: #a041ff;
     margin-bottom: 16px; 
-   
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .reviews-icon {
-    align-content: center;
+    
     fill: #ffd700;
    
 

@@ -38,7 +38,6 @@
 
 .faq-track {
   display: flex;
-  
   transition: transform 0.3s ease;
   gap: 24px;
 
@@ -58,12 +57,11 @@
   padding: 118px 24px 34px;
   transition: all 0.3s ease;
   position: relative;
-  /*padding: 10px;*/
   overflow: hidden;
 }
 
 .faq-item[data-open="true"] {
-  width: 360px;
+  width: 288px;
   writing-mode: horizontal-tb;
   flex-direction: column;
   align-items: center;
@@ -125,7 +123,7 @@
 
 
 
-.faq-btn-nav {
+.faq-btn-nav-mob {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -134,9 +132,13 @@
   width: 130px;
   height: 32px;
   margin: 0 auto;
+ 
 }
-.faq-btn-nav-prev,
-.faq-btn-nav-next {
+.faq-btn-nav-prev-mob,
+.faq-btn-nav-next-mob,
+.faq-btn-nav-prev-desk,
+.faq-btn-nav-next-desk
+ {
   background: none;
   border: none;
   font-size: 2rem;
@@ -182,7 +184,9 @@
 .faq-item[data-open="true"] .faq-toggle-icon::after {
   transform: scale(0); /* ховаємо вертикальну паличку */
 }
-
+.faq-btn-nav-desk {
+  display: none;
+}
 
 @media only screen and (min-width: 1200px) {
 .faq {
@@ -194,7 +198,7 @@
   
     font-size: 64px;
     line-height: 1.1;
-    margin-bottom: 60px;
+    margin-bottom: 0;
     
 }
 
@@ -205,13 +209,36 @@
 
 .space3-faq{
 
-  margin-left: 400px;
+  margin-left: 350px;
 }
 
 .faq-carousel {
  margin-bottom: 60px;
 }
 
+.faq-item[data-open="true"] {
+  width: 360px;
+ 
+}
+.faq-btn-nav-mob {
+  display: none;
+}
 
+.faq-btn-nav-desk {
+  display: block;
+}
+
+.faq-btn-nav-desk {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction: row;
+  gap: 50px;
+  width: 130px;
+  height: 32px;
+  margin-left: 898px;
+  margin-bottom: 50px;
+ 
+}
 
 }
