@@ -1,6 +1,6 @@
 .game-mechanics {
     padding-bottom: 40px;
-    background-image: url('../img/game_mechanics/bg_stars_mob.png');
+    background-image: url('/img/game_mechanics/bg_stars_mob.png');
     background-size: 320px;
     background-position: center;
     background-repeat: no-repeat;

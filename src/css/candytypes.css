@@ -1,7 +1,7 @@
 .candy-types {
     border-radius: 40px;
     padding-bottom: 40px;
-    background-image: url('../img/candy_types/bgmob.png');
+    background-image: url('/img/candy_types/bgmob.png');
     background-size: 320px;
     background-position: center;
     background-repeat: no-repeat;

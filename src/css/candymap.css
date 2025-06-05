@@ -30,8 +30,6 @@
     margin-bottom: 40px;
 }
 
-.candy-map-list-item {}
-
 .candy-map-wrapper {
     display: flex;
     border: 1px solid #40087f;
@@ -112,11 +110,9 @@
     color: #40087f; 
 }
 
-
 .candy-map-desktop {
     display: none;
 }
-
 
 @media only screen and (min-width: 1200px) {
 
@@ -141,10 +137,6 @@
         display: none;
     }
 
-    .swiper-wrapper {}
-
-    .swiper-slide {}
-
     .hide-on-mobile {
         display: block;
     }
@@ -166,7 +158,7 @@
         position: relative;
         width: 678px;
         height: 972px;
-        background-image: url("../img/candy_map/deskbg.png");
+        background-image: url("/img/candy_map/deskbg.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
