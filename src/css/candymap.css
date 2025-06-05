@@ -118,7 +118,6 @@
 
     .candy-map-header {
         font-size: 64px;
-        margin-top: 22px;
         margin-bottom: 44px;
     }
 
@@ -241,7 +240,7 @@
         display: block;
     }
 
-    .swiper {
+    .swiper-mob {
         display: none;
     }
 }

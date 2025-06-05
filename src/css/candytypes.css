@@ -1,11 +1,13 @@
 .candy-types {
     border-radius: 40px;
     padding-bottom: 40px;
+    padding-top: 30px;
     background-image: url('/img/candy_types/bgmob.png');
     background-size: 320px;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 40px;
+
 }
 
 .candy-types-header {
@@ -16,7 +18,6 @@
     color: #ff4eb8;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     transform: rotate(-5deg);
-    margin-bottom: 34px;
 }
 
 .line2-candy-types {
@@ -29,7 +30,8 @@
     font-size: 24px;
     line-height: 1.16;
     color: #5c2d91;
-    margin-bottom: 40px;
+    margin-top: 16px;
+    margin-bottom: 30px;
 }
 
 .candy-types-list {
@@ -104,9 +106,11 @@
         background-position: center;
          background-repeat: no-repeat;
     }
+
     .candy-types-header {
         font-size: 64px;
         margin-bottom: 44px;
+    
     }
     .line2-candy-types {
         margin-left: 130px;
