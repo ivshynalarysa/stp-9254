@@ -30,11 +30,9 @@
 .faq-carousel {
   display: flex;
   align-items: center;
-  overflow-x: auto;
-  overflow-y: hidden;
-  -webkit-overflow-scrolling: touch;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
+  overflow: hidden;
+  position: relative;
+ 
   max-width: 100%;
   margin-bottom: 40px;
   
@@ -43,10 +41,11 @@
 .faq-track {
   display: flex;
   overflow-x: auto;
+  scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   transition: transform 0.3s ease;
   gap: 24px;
-  min-width: max-content;
+  width: 100%;;
 
 }
 
@@ -61,12 +60,12 @@
   gap: 100px;
   align-items: center;
   justify-content:flex-end;
-  padding: 118px 24px 34px;
+  padding: 88px 24px;
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
   flex: 0 0 auto;
-  scroll-snap-align: center;
+ 
 }
 
 .faq-item[data-open="true"] {
@@ -75,8 +74,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 118px 24px 38px;
   background: #fff8dc;
+  scroll-snap-align: center;
 }
 .faq-item:nth-child(4n+1) {
   box-shadow: inset 0 0 50px 0 #ff4eb8;
@@ -108,10 +107,12 @@
   font-size: 24px;
   line-height: 1.5;
   text-align: center;
+  justify-content: center;
   color: #666;
   display: none;
   opacity: 0;
   transition: opacity 0.3s ease;
+  
 }
 
 .faq-item[data-open="true"] .faq-answer {
@@ -161,8 +162,8 @@
 
 .faq-toggle-btn {
   position: absolute;
-  top: 10px;
-  right: 15px;
+  top: 15px;
+  right: 12px;
   width: 32px;
   height: 32px;
   background-color: transparent;
@@ -174,7 +175,8 @@
 .faq-item[data-open="true"] .faq-toggle-icon  {
  rotate: 45deg; 
 }
-.faq-btn-nav-desk {
+.faq-btn-nav-desk,
+.faq-btn-nav-mob {
   display: none;
 }
 
@@ -208,6 +210,7 @@
 
 .faq-item[data-open="true"] {
   width: 360px;
+  flex: 0 0 auto;
  
 }
 .faq-btn-nav-mob {
@@ -227,18 +230,18 @@
   width: 130px;
   height: 32px;
   margin-left: 898px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
  
 }
 
-.faq-carousel {
+.faq-track {
     overflow-x: hidden;
   }
 
   .faq-item.faq-focused:not([data-open="true"]) {
-    outline: 3px solid #40087f;
-   box-shadow: 0 2px 10px 0 #ff4eb8
-   color(srgb rgb(174, 0, 255) green blue)
+    outline-color: #5c2d91;
+   
+   
    
   }
 }

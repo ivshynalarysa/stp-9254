@@ -28,7 +28,7 @@
 
 .events-box {
      background-image:
-        url(/img/events/event-vector-mob.png);
+        url(/img/events/events-vector-mob.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100% 100%;
@@ -109,7 +109,12 @@
     display: none;
 }
 
-
+  @media  (min-resolution: 192dpi) {
+       .events-box { 
+        background-image:
+        url(/img/events/events-vector-mob-2x.png);
+        }
+      }
 
 @media only screen and (min-width: 1200px) {
 .events {
@@ -216,6 +221,13 @@
 .events-yellow-vector {
     display: block;
 }
+
+  @media  (min-resolution: 192dpi) {
+       .events-box { 
+        background-image:
+        url(/img/events/events-vector-desk-2x.png);
+        }
+      }
 
 }
   
