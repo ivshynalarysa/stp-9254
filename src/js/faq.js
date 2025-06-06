@@ -23,16 +23,28 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Якщо toggle не передано або після toggle потрібно підсвітити і скролити поточний
-    if (!toggle) {
-      faqItems.forEach((item, index) => {
-        if (index === currentIndex) {
-          item.setAttribute('data-open', 'true');
-          item.classList.add('faq-focused');
-        } else {
-          item.removeAttribute('data-open');
-        }
-      });
+   if (!toggle) {
+  faqItems.forEach((item, index) => {
+    if (index === currentIndex) {
+      item.setAttribute('data-open', 'true');
+    } else {
+      item.removeAttribute('data-open');
     }
+
+    // 👇 Підсвічуємо тільки НЕвідкриту активну картку
+    if (
+      window.innerWidth >= 1200 &&
+      index === currentIndex &&
+      !item.hasAttribute('data-open')
+    ) {
+      item.classList.add('faq-focused');
+    } else {
+      item.classList.remove('faq-focused');
+    }
+  
+  });
+}
+
 
     // Скролимо відкритий елемент по центру
     const activeItem = faqItems[currentIndex];
@@ -40,11 +52,20 @@ document.addEventListener('DOMContentLoaded', () => {
       const containerWidth = faqTrack.clientWidth;
       const itemLeft = activeItem.offsetLeft;
       const itemWidth = activeItem.offsetWidth;
-
-      faqTrack.scrollTo({
+    if (window.innerWidth === 320 ){
+      activeItem.scrollIntoView({
+        behavior: 'smooth',
+        inline: 'center',
+        block: 'nearest',
+      })
+    }
+      else {
+        faqTrack.scrollTo({
         left: itemLeft - (containerWidth / 2) + (itemWidth / 2),
         behavior: 'smooth',
-      });
+      })
+      }
+      ;
     }
   }
 
@@ -65,12 +86,19 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Обробник кліку по самому item (відкриваємо цей)
-  faqItems.forEach((item, index) => {
-    item.addEventListener('click', () => {
+faqItems.forEach((item, index) => {
+  item.addEventListener('click', () => {
+    const isOpen = item.hasAttribute('data-open');
+
+    // Якщо ця ж картка вже відкрита — закриваємо її
+    if (currentIndex === index && isOpen) {
+      item.removeAttribute('data-open');
+    } else {
       currentIndex = index;
       updateFAQ(false);
-    });
+    }
   });
+});
 
   // Кнопки навігації
   prevBtns.forEach(btn => {
