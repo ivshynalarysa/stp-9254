@@ -52,12 +52,15 @@ document.addEventListener('DOMContentLoaded', () => {
       const containerWidth = faqTrack.clientWidth;
       const itemLeft = activeItem.offsetLeft;
       const itemWidth = activeItem.offsetWidth;
-    if (window.innerWidth === 320 ){
-      activeItem.scrollIntoView({
-        behavior: 'smooth',
-        inline: 'center',
-        block: 'nearest',
-      })
+    if (window.innerWidth < 1200 ){
+      setTimeout(()=>{
+        activeItem.scrollIntoView({
+           behavior: 'smooth',
+           inline: 'center',
+           block: 'nearest',
+        });
+      }, 300);
+      
     }
       else {
         faqTrack.scrollTo({
@@ -88,6 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Обробник кліку по самому item (відкриваємо цей)
 faqItems.forEach((item, index) => {
   item.addEventListener('click', () => {
+    //e.preventDefault();
     const isOpen = item.hasAttribute('data-open');
 
     // Якщо ця ж картка вже відкрита — закриваємо її

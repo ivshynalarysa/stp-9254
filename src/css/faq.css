@@ -51,7 +51,10 @@
 
 .faq-item {
 
+  min-width: 60px;
   width: 60px;
+  transition: min-width 0.3s ease, width 0.3s ease;
+  height: 600px;
   min-height: 600px;
   background: linear-gradient(to bottom, #fff0f0, #ffe);
   writing-mode: vertical-rl;
@@ -69,6 +72,7 @@
 }
 
 .faq-item[data-open="true"] {
+ min-width: 288px;
   width: 288px;
   writing-mode: horizontal-tb;
   flex-direction: column;
