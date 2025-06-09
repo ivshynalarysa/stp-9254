@@ -51,10 +51,10 @@
 
 .faq-item {
 
-  min-width: 60px;
+  min-width: 60px; /*для того щоб єкран на мобілці не пригав + transition*/
   width: 60px;
   transition: min-width 0.3s ease, width 0.3s ease;
-  height: 600px;
+  height: 600px; /*теж саме, из-за єкрана*/
   min-height: 600px;
   background: linear-gradient(to bottom, #fff0f0, #ffe);
   writing-mode: vertical-rl;
@@ -82,19 +82,28 @@
   scroll-snap-align: center;
 }
 .faq-item:nth-child(4n+1) {
-  box-shadow: inset 0 0 50px 0 #ff4eb8;
+  box-shadow: inset 0 0 25px 0 #ff4eb8;
 }
-
+.faq-item:nth-child(4n+1)[data-open="true"]{
+   box-shadow: inset 0 0 50px 0 #ff4eb8;
+}
 .faq-item:nth-child(4n+2) {
-  box-shadow: inset 0 0 50px 0 #a041ff;
+  box-shadow: inset 0 0 25px 0 #a041ff;
 }
-
+.faq-item:nth-child(4n+2)[data-open="true"]{
+   box-shadow: inset 0 0 50px 0 #a041ff;
+}
 .faq-item:nth-child(4n+3) {
-  box-shadow: inset 0 0 50px 0 #ff3b3b;
+  box-shadow: inset 0 0 25px 0 #ff3b3b;
 }
-
+.faq-item:nth-child(4n+3)[data-open="true"]{
+   box-shadow: inset 0 0 50px 0 #ff3b3b;
+}
 .faq-item:nth-child(4n+4) {
-  box-shadow: inset 0 0 50px 0 #ffd700;
+  box-shadow: inset 0 0 25px 0 #ffd700;
+}
+.faq-item:nth-child(4n+4)[data-open="true"]{
+   box-shadow: inset 0 0 50px 0 #ffd700;
 }
 .faq-question {
   
