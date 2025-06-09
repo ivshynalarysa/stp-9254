@@ -13,7 +13,7 @@ const swiper = new Swiper('.swiper-mob', {
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: 1,
-  loop: true,
+  loop: false,
 
   spaceBetween: 8, 
 
