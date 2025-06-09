@@ -53,13 +53,14 @@ document.addEventListener('DOMContentLoaded', () => {
       const itemLeft = activeItem.offsetLeft;
       const itemWidth = activeItem.offsetWidth;
     if (window.innerWidth < 1200 ){
+      //задержка, щоб не стрибав єкран
       setTimeout(()=>{
         activeItem.scrollIntoView({
            behavior: 'smooth',
            inline: 'center',
            block: 'nearest',
         });
-      }, 300);
+      }, 1000);
       
     }
       else {
