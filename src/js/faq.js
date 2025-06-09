@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const faqTrack = document.querySelector('.faq-track');
-  const faqItems = faqTrack.querySelectorAll('.faq-item');
-  const prevBtns = document.querySelectorAll('[data-menu-nav-prev]');
-  const nextBtns = document.querySelectorAll('[data-menu-nav-next]');
+  const faqTrack = document.querySelector('[data-faq-track]');
+  const faqItems = faqTrack.querySelectorAll('[data-faq-item]');
+  const prevBtns = document.querySelectorAll('[data-faq-nav-prev]');
+  const nextBtns = document.querySelectorAll('[data-faq-nav-next]');
   let currentIndex = 0;
 
   function updateFAQ(toggle = false, toggleIndex = null) {
