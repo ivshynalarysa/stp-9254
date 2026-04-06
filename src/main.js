@@ -4,5 +4,6 @@ import './js/cookie';
 import './js/reviews';
 import './js/faq';
 import './js/map';
+import './js/mapanimate';
 
 

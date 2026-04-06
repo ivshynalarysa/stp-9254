@@ -113,6 +113,9 @@
 .candy-map-desktop {
     display: none;
 }
+.candy-map-block {
+    display: none;
+}
 
 @media only screen and (min-width: 1200px) {
 
@@ -151,7 +154,7 @@
         gap: 25px;
     }
 
-    .candy-map-desktop {
+   /** .candy-map-desktop {
         display: flex;
         margin: 0 auto;
         position: relative;
@@ -162,8 +165,17 @@
         background-position: center;
         background-size: contain;
         background-color: #fff;
-    }
+    }**/
+.candy-map-block {
+    display: block;
+    margin: 0 auto;
+    width: 684px;
+    height: 100%;
+    background: inherit;
 
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
     .map-item {
         display: flex;
         justify-content: space-between;
@@ -233,14 +245,170 @@
         font-size: 24px;
         line-height: 1.33;
         color: #40087f;
-        max-width: 300px;
+        max-width: 360px;
+        padding-left: 0px;
     }
 
     .gradient-line {
         display: block;
     }
 
+    .gradient-line-1 {
+        position: absolute;
+        bottom: 20px;
+    }
     .swiper-mob {
         display: none;
     }
+
+    /* Початковий стан */
+.animate-left,
+.animate-right {
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.animate-left {
+  transform: translateX(-100px);
+}
+
+.animate-right {
+  transform: translateX(100px);
+}
+
+/* Коли з'являється */
+.animate-left.show,
+.animate-right.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.candy-map-list {
+    
+    display: flex;
+    gap: 48px;
+    flex-direction: column;
+    
+    
+    
+}
+.candy-map-firstrow, 
+.candy-map-secondrow,
+ .candy-map-thirdrow {
+    position: relative;
+    display: flex;
+    
+    flex-direction: row;
+}
+.purple-trip-1 {
+    position: absolute;
+    bottom: -56px;
+    left: 210px;
+
+    background-image: url(../img/candy_map/purple-trip-right.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 248px;
+    height: 44px;
+}
+.purple-trip-2{
+    position: absolute;
+    top: -30px;
+    left: 0;
+    background-image: url(../img/candy_map/purple-trip-left.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 224px;
+    height: 20px;
+}
+.purple-trip-3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: url(../img/candy_map/purple-trip-right.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 248px;
+    height: 44px;
+}
+.purple-trip-4{
+    position: absolute;
+    top: -30px;
+    left: 0;
+    background-image: url(../img/candy_map/purple-trip-left.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 224px;
+    height: 20px;
+}
+.purple-map-block-right {
+    position: absolute;
+    right: 0;
+    top: -32px;
+    display: flex;
+  width: 458px;
+  height: 256px;
+padding-top: 40px;
+padding-right: 26px;
+padding-left: 128px;
+
+  
+  background-image: 
+    url(../img/candy_map/map-right.png);
+    background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+.purple-map-block-left {
+    display: flex;
+    gap: 50px;
+  width: 458px;
+  height: 280px;
+  align-items: end;
+    padding-bottom: 60px;
+    padding-left: 26px;
+    
+  background-image: url(../img/candy_map/map-left.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.map-item-right {
+   width: 458px;
+   height: 280px;
+    
+}
+.map-item-left {
+   width: 458px;
+   height: 280px;
+}
+.map-text-right {
+    margin-left: auto;
+    
+    width: 140px;
+
+}
+.map-text-left {
+    
+    
+    width: 140px;
+
+}
+.purple-map-block-left .map-img,
+.purple-map-block-right .map-img{
+    width: 100px;
+    height: 100px;
+}
+
+
+.purple-map-block .map-text {
+  color: #c026d3;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+
+
 }
